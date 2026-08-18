@@ -1,0 +1,7004 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*
+  TEMPLATE BACKGROUNDS
+    ken burns slideshow IMG
+  reset
+  layout
+  page wrapper
+  logo
+  navigation
+    navigation social icons
+  navigation - style #2
+    lines
+  navigation - style #3
+    link underline
+    search modal
+  section
+  quotations
+  PAGES
+  page all
+  page home
+    parallax
+    hero container
+    home
+  dividers
+  page about
+  page facts
+    facts counter
+  page services
+  page works
+    works hover
+  page testimonials
+  page news
+  page contact
+    social icons footer
+  page google maps
+  page footer
+  center container
+  preloader
+  ken burns slideshow
+  YouTube video
+  the wall
+  skills bar
+  Owl Carousel v2.2.0 CUSTOM
+  play video button
+*/
+
+
+/* TEMPLATE BACKGROUNDS */
+/* ken burns slideshow IMG */
+.kenburns-slide-1 {
+background-image: url(../img/background/kenburns-bg-1.jpg);
+}
+
+.kenburns-slide-2 {
+background-image: url(../img/background/kenburns-bg-2.jpg);
+}
+
+.kenburns-slide-3 {
+background-image: url(../img/background/kenburns-bg-3.jpg);
+}
+
+.kenburns-slide-4 {
+background-image: url(../img/background/kenburns-bg-4.jpg);
+}
+
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+html, body {
+height: 100%;
+line-height: 170%;
+}
+
+body {
+/* line-height: 1; */
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ol, ul {
+list-style: none;
+}
+
+blockquote, q {
+quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+content: '';
+content: none;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+*:focus {  
+outline: none;
+}
+
+/* remove dotted outline from links, button and input element */
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+border: 0;
+outline: 0;
+}
+
+
+/* layout */
+body {
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+text-align: left;
+color: #5f5f5f;
+background: #111;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+width: 100%;
+height: 100%;
+overflow-x: hidden;
+overflow-y: auto;
+margin: 0;
+padding: 0;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+outline: none;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+a:hover,
+a:visited,
+a:active,
+a:focus {
+color: #fff;
+text-decoration: none;
+outline: none;
+}
+
+p {
+font-size: 14px;
+line-height: 1.5;
+font-style: normal;
+font-weight: 400;
+text-align: left;
+color: #5f5f5f;
+padding: 0 0 25px 0;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+p a {
+color: #111;
+text-decoration: none;
+outline: none;
+-webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+     -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+}
+
+p a:hover {
+color: #111;
+text-decoration: none;
+outline: none;
+-webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+     -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+}
+
+p a:hover,
+p a:visited,
+p a:active,
+p a:focus {
+color: #111;
+text-decoration: none;
+outline: none;
+}
+
+strong {
+font-weight: bold;
+}
+
+::-moz-selection { background: #8d8d8d; color: #fff; }
+::-moz-selection { background: #8d8d8d; color: #fff; }
+	 ::selection { background: #8d8d8d; color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+
+/* page wrapper */
+.page-wrapper {
+position: relative;
+width: 100%;
+background: #fff;
+-webkit-pointer-events: none;
+   -moz-pointer-events: none;
+        pointer-events: none;
+-webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+-webkit-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+z-index: 100;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .page-wrapper {
+    z-index: 150;
+  }
+}
+
+.page-wrapper > * {
+-webkit-pointer-events: auto;
+   -moz-pointer-events: auto;
+        pointer-events: auto;
+}
+
+
+/* logo */
+.logo {
+position: fixed;
+display: inline-block;
+top: 50px;
+left: 50px;
+line-height: 0;
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+cursor: pointer;
+z-index: 200;
+}
+
+.logo-img:before {
+content: "";
+background: url(../img/logo_.webp) no-repeat;
+display: block;
+width: 57px;
+height: 34px;
+line-height: 34px;
+-webkit-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.logo-img-dark:before {
+content: "";
+background: url(../img/logo-dark-mobile.png) no-repeat;
+display: block;
+width: 57px;
+height: 34px;
+line-height: 34px;
+-webkit-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.logo-light .logo-img:before {
+background: url(../img/logo-black-mobile.png) no-repeat;
+}
+
+.logo-dark .logo-img-dark:before {
+background: url(../img/logo-black-mobile.png) no-repeat;
+}
+
+@media only screen and (max-width: 1200px) {
+  .logo {
+    position: absolute;
+	top: 25px;
+    left: 25px;
+    z-index: 100;
+  }
+}
+
+
+/* navigation */
+.navigation-overlay {
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+-webkit-pointer-events: none;
+   -moz-pointer-events: none;
+        pointer-events: none;
+background: rgba(0, 0, 0, 1);
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transform: scale(1);
+   -moz-transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+        transform: scale(1);
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
+z-index: 102;
+}
+
+.navigation-overlay.light {
+background: rgba(255, 255, 255, 1);
+}
+
+.menu-open .navigation-overlay {
+-webkit-pointer-events: all;
+   -moz-pointer-events: all;
+        pointer-events: all;
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+-webkit-transform: scale(1);
+   -moz-transform: scale(1);
+    -ms-transform: scale(1);
+     -o-transform: scale(1);
+        transform: scale(1);
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
+z-index: 101;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-open .navigation-overlay {
+    z-index: 250;
+  }
+}
+
+.menu-open .logo-img:before {
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
+}
+
+.menu-open .navigation-toggle .navigation-toggle-bars {
+background: #fff;
+}
+
+.menu-open .navigation-toggle.dark .navigation-toggle-bars {
+background: #111;
+}
+
+.menu-open .navigation-toggle:hover .navigation-toggle-bars {
+background: #fff;
+}
+
+.menu-open .navigation-toggle.dark:hover .navigation-toggle-bars {
+background: #111;
+}
+
+.menu-open .navigation {
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flexbox;
+display: -o-flex;
+display: flex;
+text-align: center;
+-webkit-box-pack: center;
+   -ms-flex-pack: center;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .menu-open .navigation {
+	position: fixed;
+	display: block;
+	left: 50%;
+	z-index: 250;
+  }
+}
+
+.navigation-toggle-icon {
+position: relative;
+display: block;
+width: 32px;
+height: 25px;
+top: 0;
+left: 0;
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+z-index: 1;
+}
+
+.navigation-toggle-bars {
+position: absolute;
+width: 40px;
+height: 2px;
+right: 0;
+-webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+-webkit-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+-webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+        backface-visibility: hidden;
+background: #111;
+}
+
+.navigation-toggle-bars:nth-of-type(1) {
+width: 20px;
+top: 0; 
+}
+
+.navigation-toggle-bars:nth-of-type(2) {
+top: -webkit-calc(50% - 1.5px);
+top: calc(50% - 1.5px);
+}
+
+.navigation-toggle-bars:nth-of-type(3) {
+width: 20px;
+bottom: 0;
+}
+
+.navigation-toggle {
+position: fixed;
+top: 50px;
+right: 50px;
+padding: 0;
+border: none;
+background: none;
+outline: none;
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+cursor: pointer;
+z-index: 200;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .navigation-toggle {
+	z-index: 300;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .navigation-toggle {
+	top: 25px;
+    right: 25px;
+  }
+}
+
+.navigation-toggle:hover .navigation-toggle-bars {
+width: 100%;
+}
+
+.navigation-toggle-closer .navigation-toggle-bars {
+width: 32px;
+height: 2px;
+}
+
+.navigation-toggle-closer .navigation-toggle-bars:nth-of-type(1) {
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+	 -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+}
+
+.navigation-toggle-closer .navigation-toggle-bars:nth-of-type(2) {
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.navigation-toggle-closer .navigation-toggle-bars:nth-of-type(3) {
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+	 -o-transform: translateX(100%);
+        transform: translateX(100%);
+}
+
+.navigation-toggle-bars-light {
+background: #fff;
+}
+
+.navigation-toggle-bars-dark {
+background: #111;
+}
+
+.menu {
+margin-top: -28px;
+}
+
+.menu-item {
+position: relative;
+margin: 0 0 17px 0;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+@media only screen and (max-width: 880px) {
+  .menu-item {
+	margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu-item {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .menu-item {
+    margin: 0 0 5px 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu-item {
+    margin: 0 0 10px 0;
+  }
+}
+
+.menu-link {
+position: relative;
+font-family: "Montserrat", sans-serif;
+font-size: 35px;
+font-weight: 700;
+text-transform: uppercase;
+line-height: 1;
+color: #fff;
+}
+
+.menu-link.dark {
+color: #111;
+}
+
+@media only screen and (max-width: 880px) {
+  .menu-link {
+	font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu-link {
+    font-size: 20px;
+  }
+}
+
+.menu-link:after {
+content: "";
+position: absolute;
+display: block;
+width: 0;
+height: 4px;
+left: 0;
+bottom: -8px;
+background-color: #fff;
+-webkit-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media only screen and (max-width: 880px) {
+  .menu-link:after {
+    height: 4px;
+	bottom: -9px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .menu-link:after {
+    height: 2px;
+	bottom: -6px;
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .menu-link:after {
+    height: 2px;
+	bottom: -3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .menu-link:after {
+    height: 2px;
+	bottom: -6px;
+  }
+}
+
+.menu-link.dark:after {
+background-color: #111;
+}
+
+.menu-link:hover {
+color: #fff;
+}
+
+.menu-link.dark:hover {
+color: #111;
+}
+
+.menu-link:hover:after {
+width: 100%;
+background-color: #fff;
+}
+
+.menu-link.dark:hover:after {
+background-color: #111;
+}
+
+.navigation {
+position: fixed;
+display: none;
+width: -webkit-calc(100% - 50px);
+width: calc(100% - 50px); 
+top: 85px;
+left: 50%;
+bottom: 55px;
+-webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+-webkit-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: opacity 300ms cubic-bezier(0.77, 0, 0.175, 1);
+z-index: 101;
+}
+
+
+/* navigation social icons */
+.navigation-social-icons {
+position: absolute;
+display: block;
+width: 100%;
+left: 50%;
+bottom: -25px;
+-webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+     -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+}
+
+@media only screen and (max-width: 640px) {
+  .navigation-social-icons {
+    display: block;
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 640px) and (orientation: landscape) {
+  .navigation-social-icons {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navigation-social-icons {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.navigation-social-icons ul {
+margin: 0 auto;
+padding: 0;
+list-style-type: none;
+}
+
+.navigation-social-icons ul li {
+display: inline-block;
+margin: 0 auto;
+padding: 0 0 0 5px;
+}
+
+ul.social-icons {
+position: relative;
+font-size: 16px;
+line-height: 1;
+margin: 0;
+padding: 0;
+}
+
+ul.social-icons a {
+    padding: 0;
+    color: #00ffff; /* TERMINAL CYAN - Standardzustand */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+ul.social-icons.dark a {
+    color: #00ffff; /* Auch hier Cyan statt #111 */
+}
+
+ul.social-icons a:hover {
+    padding: 0;
+    color: #ffffff; /* Beim Hover wirds hell/weiß für den Kontrast */
+    text-decoration: none;
+    /* Der Glow-Effekt statt dem alten Opacity-Gedöns */
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
+    transition: all 0.3s ease;
+}
+
+ul.social-icons.dark a:hover {
+    color: #ffffff;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
+}
+
+
+/* navigation - style #2 */
+#menu-mobile-btn {
+position: fixed;
+width: 63px;
+height: 50px;
+top: 36px;
+right: 35px;
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+z-index: 200;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #menu-mobile-btn {
+    z-index: 300;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #menu-mobile-btn {
+    top: 11px;
+    right: 10px;
+  }
+}
+
+.menu-toggle {
+position: absolute;
+display: block;
+padding: 0;
+background: none;
+line-height: 1;
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+border: none;
+z-index: 101;
+}
+
+#menu-mobile {
+position: fixed;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+font-style: normal;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 1px;
+line-height: 1;
+width: 390px;
+height: 100%;
+right: -200%;
+top: 0;
+margin: auto;
+-webkit-transition: right .6s ease-in-out;
+   -moz-transition: right .6s ease-in-out;
+    -ms-transition: right .6s ease-in-out;
+     -o-transition: right .6s ease-in-out;
+        transition: right .6s ease-in-out;
+-webkit-transform: skew(-22deg, 0deg);
+   -moz-transform: skew(-22deg, 0deg);
+    -ms-transform: skew(-22deg, 0deg);
+     -o-transform: skew(-22deg, 0deg);
+        transform: skew(-22deg, 0deg);
+background: rgba(0, 0, 0, 1);
+z-index: 101;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #menu-mobile {
+    z-index: 250;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  #menu-mobile {
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #menu-mobile {
+    font-size: 17px;
+    width: 230px;
+  }
+}
+
+#menu-mobile.activated {
+right: 0;
+}
+
+#menu-mobile ul {
+width: 390px;
+list-style: none outside none;
+margin: 0 auto;
+padding-left: 93px;
+}
+
+@media only screen and (max-width: 880px) {
+  #menu-mobile ul {
+    width: 300px;
+    padding-left: 63px;
+  }
+}
+
+#menu-mobile ul li {
+padding: 0 0 2px 0;
+cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+  #menu-mobile ul li {
+    padding: 0 0 3px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #menu-mobile ul {
+    width: 230px;
+    padding-left: 28px;
+  }
+}
+
+#menu-mobile .credits {
+font-size: 12px;
+margin: 7px 0 0 0;
+}
+
+@media only screen and (max-width: 880px) {
+  #menu-mobile .credits {
+    font-size: 10px;
+  }
+}
+
+#menu-mobile .credits a {
+color: #fff;
+text-decoration: none;
+}
+
+#menu-mobile a {
+display: none;
+min-width: 10px;
+color: #fff;
+text-decoration: none;
+-webkit-transition: color .8s ease-in-out;
+   -moz-transition: color .8s ease-in-out;
+    -ms-transition: color .8s ease-in-out;
+     -o-transition: color .8s ease-in-out;
+        transition: color .8s ease-in-out;
+}
+
+#menu-mobile a:hover {
+color: #8d8d8d;
+-webkit-transition: color .8s ease-in-out;
+   -moz-transition: color .8s ease-in-out;
+    -ms-transition: color .8s ease-in-out;
+     -o-transition: color .8s ease-in-out;
+        transition: color .8s ease-in-out;
+}
+
+#menu-mobile li .active {
+color: #8d8d8d;
+}
+
+.menu-nav-wrapper {
+display: table;
+width: 100%;
+height: 100%;
+overflow: hidden;
+}
+
+.menu-nav {
+display: table-cell;
+width: 100%;
+height: 100%;	
+vertical-align: middle;
+}
+
+
+/* lines */
+.lines-button {
+margin: -16px 0 0 -3px;
+padding: 30px 16px;
+cursor: pointer;
+-webkit-user-select: none;
+ -khtml-user-select: none;
+   -moz-user-select: none;
+    -ms-user-select: none;
+        user-select: none;
+}
+
+.lines-button:hover {
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.lines-button:active {
+-webkit-transition: 0;
+   -moz-transition: 0;
+	-ms-transition: 0;
+     -o-transition: 0;
+        transition: 0;
+}
+
+.lines {
+position: relative;
+display: inline-block;
+width: 35px;
+height: 2px;
+-webkit-transition: .3s;
+   -moz-transition: .3s;
+	-ms-transition: .3s;
+     -o-transition: .3s;
+        transition: .3s;
+background: #111;
+}
+
+.lines.inverse-light {
+background: #fff;
+}
+
+.lines.inverse-dark {
+background: #111;
+}
+
+.lines:after,
+.lines:before {
+content: "";
+position: absolute;
+display: inline-block;
+width: 35px;
+height: 2px;
+-webkit-transition: .3s;
+   -moz-transition: .3s;
+	-ms-transition: .3s;
+     -o-transition: .3s;
+        transition: .3s;
+left: 0;
+-webkit-transform-origin: .28571rem center;
+   -moz-transform-origin: .28571rem center;
+    -ms-transform-origin: .28571rem center;
+     -o-transform-origin: .28571rem center;
+        transform-origin: .28571rem center;
+background: #111;
+}
+
+.lines.inverse-light:after,
+.lines.inverse-light:before {
+background: #fff;
+}
+
+.lines.inverse-dark:after,
+.lines.inverse-dark:before {
+background: #111;
+}
+
+.lines:before {
+top: 10px;
+}
+
+.lines:after {
+top: -10px;
+}
+
+.lines-button.minus.lines-close .lines:after,
+.lines-button.minus.lines-close .lines:before {
+-webkit-transform: none;
+   -moz-transform: none;
+    -ms-transform: none;
+     -o-transform: none;
+        transform: none;
+top: 0;
+width: 35px;
+background: #8d8d8d;
+}
+
+.lines-button.x.lines-close .lines {
+background: 0 0;
+}
+
+.lines-button.x.lines-close .lines:after,
+.lines-button.x.lines-close .lines:before {
+-webkit-transform-origin: 50% 50%;
+   -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+     -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+top: 0;
+width: 35px;
+background: #8d8d8d;
+}
+
+.lines-button.x.lines-close .lines:before {
+-webkit-transform: rotate3d(0,0,1,45deg);
+   -moz-transform: rotate3d(0,0,1,45deg);
+    -ms-transform: rotate3d(0,0,1,45deg);
+     -o-transform: rotate3d(0,0,1,45deg);
+        transform: rotate3d(0,0,1,45deg);
+}
+
+.lines-button.x.lines-close .lines:after {
+-webkit-transform: rotate3d(0,0,1,-45deg);
+   -moz-transform: rotate3d(0,0,1,-45deg);
+    -ms-transform: rotate3d(0,0,1,-45deg);
+     -o-transform: rotate3d(0,0,1,-45deg);
+        transform: rotate3d(0,0,1,-45deg);
+}
+
+.lines-button.x2 .lines {
+-webkit-transition: background .3s .5s ease;
+   -moz-transition: background .3s .5s ease;
+	-ms-transition: background .3s .5s ease;
+     -o-transition: background .3s .5s ease;
+        transition: background .3s .5s ease;
+}
+
+.lines-button.x2 .lines:after,
+.lines-button.x2 .lines:before {
+-webkit-transform-origin: 50% 50%;
+   -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+     -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+-webkit-transition: top .3s .6s ease, -webkit-transform .3s ease;
+   -moz-transition: top .3s .6s ease, -moz-transform .3s ease;
+	-ms-transition: top .3s .6s ease, -ms-transform .3s ease;
+     -o-transition: top .3s .6s ease, -o-transform .3s ease;
+        transition: top .3s .6s ease, transform .3s ease;
+}
+
+.lines-button.x2.lines-close .lines {
+-webkit-transition: background .3s 0 ease;
+   -moz-transition: background .3s 0 ease;
+	-ms-transition: background .3s 0 ease;
+     -o-transition: background .3s 0 ease;
+        transition: background .3s 0 ease;
+background: 0 0;
+}
+
+.lines-button.x2.lines-close .lines:after,
+.lines-button.x2.lines-close .lines:before {
+-webkit-transition: top .3s ease, -webkit-transform .3s .5s ease;
+   -moz-transition: top .3s ease, -moz-transform .3s .5s ease;
+	-ms-transition: top .3s ease, -ms-transform .3s .5s ease;
+     -o-transition: top .3s ease, -o-transform .3s .5s ease;
+        transition: top .3s ease, transform .3s .5s ease;
+top: 0;
+width: 35px;
+background: #8d8d8d;
+}
+
+.lines-button.x2.lines-close .lines:before {
+-webkit-transform: rotate3d(0,0,1,45deg);
+   -moz-transform: rotate3d(0,0,1,45deg);
+    -ms-transform: rotate3d(0,0,1,45deg);
+     -o-transform: rotate3d(0,0,1,45deg);
+        transform: rotate3d(0,0,1,45deg);
+}
+
+.lines-button.x2.lines-close .lines:after {
+-webkit-transform: rotate3d(0,0,1,-45deg);
+   -moz-transform: rotate3d(0,0,1,-45deg);
+    -ms-transform: rotate3d(0,0,1,-45deg);
+     -o-transform: rotate3d(0,0,1,-45deg);
+        transform: rotate3d(0,0,1,-45deg);
+}
+
+
+/* navigation - style #3 */
+/* navigation - style #3 (CENTERED LAYOUT REFACTOR) */
+.fix-sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.full-width-wrapper {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.main-navigation-logo {
+    float: none;
+    display: flex;
+    align-items: center;
+}
+
+.main-navigation-logo .main-navigation-logo-img {
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 200px;
+    height: 75px;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.main-navigation-logo .main-navigation-logo-img img {
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.main-navigation-logo .main-navigation-logo-img:before,
+.main-navigation-logo .main-navigation-logo-img:after {
+    display: none;
+}
+
+.main-navigation-logo-img,
+a.main-navigation-logo-img:hover {
+    cursor: pointer;
+}
+
+/* HAUPT-NAVIGATION CONTAINER (FLEXBOX CENTER) */
+.main-navigation {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 75px !important;
+    transition: height 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    background-color: rgba(17, 17, 17, .95);
+    z-index: 1015;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .main-navigation {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.main-navigation .main-inner-navigation ul > li > a {
+    color: #fff;
+}
+
+.main-navigation .main-inner-navigation ul > li > a:hover {
+    color: #00f0ff;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+}
+
+.main-navigation .main-inner-navigation ul > li > a.active {
+    color: #00f0ff;
+}
+
+.reduce-height {
+    height: 55px !important;
+}
+
+.reduce-height .main-inner-navigation ul li a {
+    height: 55px !important;
+    line-height: 55px !important;
+}
+
+/* MENÜ MITTIG PLATZIERT */
+.main-inner-navigation {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+}
+
+.main-inner-navigation ul {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: none;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 2px #111;
+}
+
+.main-inner-navigation ul li {
+    float: none;
+    margin: 0 15px;
+    position: relative;
+}
+
+.main-inner-navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.main-inner-navigation ul li a:hover,
+.main-inner-navigation ul li a.active {
+    color: #00f0ff;
+    text-decoration: none;
+}
+
+.main-navigation.transparent {
+    background: transparent !important;
+}
+
+.main-navigation.js-transparent {
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+/* link underline */
+.link-underline {
+position: relative;
+text-decoration: none;
+cursor: pointer;
+}
+
+.link-underline:before {
+content: "";
+position: absolute;
+width: 100%;
+height: 2px;
+bottom: 11px;
+left: 0;
+background: #fff;
+visibility: hidden;
+-webkit-transform: scaleX(0);
+   -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+     -o-transform: scaleX(0);
+        transform: scaleX(0);
+-webkit-transition: all 0.4s ease-in-out 0s;
+   -moz-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+     -o-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+}
+
+.link-underline:hover:before {
+visibility: visible;
+-webkit-transform: scaleX(1);
+   -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+     -o-transform: scaleX(1);
+        transform: scaleX(1);
+}
+
+.mobile-only {
+display: none;
+visibility: hidden;
+}
+
+@media only screen and (max-width: 880px) {
+  .mobile-only {
+    display: block;
+    visibility: visible;
+  }
+}
+
+
+/* search modal */
+/* --- FUTURISTISCHES ONAIR SEARCH MODAL (UPGRADE) --- */
+
+#search-wrap {
+    position: relative;
+    width: 100%;
+    height: 80px; /* Leicht erhöht für mehr Atmen */
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto; 
+}
+
+/* Das Eingabefeld (Input) */
+.input-search input[type="text"] {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px; /* Breiter für edle Web3-Optik */
+    height: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px !important; /* Schön fett und modern */
+    font-weight: 300;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #ffffff !important; /* Strahlend weißer Text beim Tippen */
+    padding: 10px 0;
+    background: none;
+    cursor: text;
+    border-bottom: 2px solid #333333 !important; /* Dunkle, edle Linie */
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Hover-Effekt auf der Linie */
+.input-search input[type="text"]:hover {
+    border-bottom: 2px solid #666666 !important;
+}
+
+/* Focus-Zustand (Klick ins Feld) -> BOOM, NEON-GLOW! */
+.input-search input[type="text"]:focus {
+    border-bottom: 2px solid #00ffff !important; /* ONAIR-Cyan */
+    /* Giftiger, feiner Cyan-Schatten */
+    filter: drop-shadow(0 2px 8px rgba(0, 255, 255, 0.4));
+}
+
+/* Farbe des Platzhalter-Texts ("To search, type...") */
+.input-search input[type="text"]::placeholder {
+    color: #555555 !important;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Das Modal im geschlossenen Zustand (Jetzt im edlen Dark-Mode) */
+.search-modal {
+    position: fixed;
+    width: calc(100% - 20px);
+    height: calc(100% - 130px);
+    top: 65px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    
+    /* Matte, halbdurchsichtige schwarze Scheibe mit Milchglas-Blur */
+    background: rgba(10, 10, 10, 0.92) !important;
+    backdrop-filter: blur(12px) !important; 
+    -webkit-backdrop-filter: blur(12px) !important;
+    
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.95); /* Weicheres Einzoomen */
+    transform: scale(0.95);
+    -webkit-transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1005;
+}
+
+.search-modal.close {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Das Modal im geöffneten Zustand */
+.search-modal.open {
+    width: calc(100% - 20px);
+    height: calc(100% - 130px);
+    top: 65px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* Responsive Anpassung für Smartphones */
+@media only screen and (max-width: 640px) {
+    .search-modal,
+    .search-modal.open {
+        width: calc(100% - 10px);
+        height: calc(100% - 120px);
+        top: 60px;
+        left: 5px;
+        bottom: 5px;
+        right: 5px;
+    }
+    .input-search input[type="text"] {
+        width: 85%;
+        font-size: 18px !important;
+    }
+}
+
+
+/* section */
+.section {
+padding: 120px 0 120px 0;
+line-height: 1.5;
+letter-spacing: 0.05em;
+}
+
+@media only screen and (max-width: 880px) {
+  .section  {
+    padding: 80px 0 80px 0;
+  }
+}
+
+.section-links {
+position: relative;
+color: #111;
+}
+
+.section a,
+.section a:hover,
+.section a:visited,
+.section a:active,
+.section a:focus {
+color: #111;
+}
+
+.section-links:after,
+.section-title:after {
+content: "";
+display: block;
+width: 20px;
+height: 1px;
+left: 0;
+background-color: #111;
+-webkit-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.section-links:after {
+position: absolute;
+bottom: -10px;
+}
+
+.section-title:after {
+position: relative;
+bottom: -9px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-title:after {
+    bottom: -14px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .section-title:after {
+    bottom: -14px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-title:after {
+    bottom: -18px;
+  }
+}
+
+.section-links:hover,
+.section-title:hover {
+color: #111;
+}
+
+.section-links:hover:after {
+width: 100%;
+background-color: #111;
+}
+
+.section-title:hover:after {
+width: 160px;
+background-color: #111;
+}
+
+.section-title:before {
+content: "";
+position: relative;
+display: block;
+width: 80px;
+height: 5px;
+left: 0;
+top: 130px;
+background-color: #111;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-title:before {
+    top: 116px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .section-title:before {
+    top: 96px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-title:before {
+    top: 79px;
+  }
+}
+
+.section-content {
+margin: 0;
+height: auto;
+border: none;
+text-align: center;
+}
+
+
+/* quotations */
+.quotations {
+font-family: 'Raleway', sans-serif;
+font-size: 12px;
+line-height: 1.5;
+font-style: italic;
+font-weight: normal;
+text-align: left;
+letter-spacing: 0.05em;
+padding: 0;
+}
+
+.quote-mark-l {
+padding: 0 10px 0 0;
+}
+
+.quote-mark-r {
+padding: 0 0 0 10px;
+}
+
+
+/* PAGES */
+/* page all */
+.section-all-subtitle {
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: 700;
+text-align: left;
+line-height: 1.3;
+color: #696c7b;
+padding: 50px 0 73px 0;
+margin: 0 auto;
+letter-spacing: normal;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section-all-subtitle {
+    padding: 56px 10px 73px 10px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .section-all-subtitle {
+    padding: 56px 15px 73px 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-all-subtitle {
+    padding: 59px 15px 73px 15px;
+  }
+}
+	
+.section-all-subtitle-first {
+color: #20202c;
+}
+	
+.section-all-subtitle-second {
+font-family: 'Montserrat', sans-serif;
+color: #111;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+}
+
+
+/* page home */
+/* parallax */
+.parallax-window {
+min-height: 100%;
+height: 100%;
+background: transparent;
+}
+
+
+/* hero container */ 
+.hero-fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Erzwingt die volle Höhe des Bildschirms */
+    overflow: hidden;
+    z-index: 1; /* Erhöht, damit es über dem Standard-Body liegt */
+}
+
+
+/* home */
+.home-page {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+z-index: 1;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .home-page {
+    z-index: 150;
+  }
+}
+
+.home-page-overlay {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, .75);
+z-index: 1;
+}
+
+.home-page-overlay.light {
+background-color: rgba(255, 255, 255, .75);
+}
+
+.home-page-overlay-gradient {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: -moz-linear-gradient(top, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .1) 100%);
+background: -webkit-linear-gradient(top, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .1) 100%);
+background: linear-gradient(to bottom, rgba(0, 0, 0, .75) 0%, rgba(0, 0, 0, .1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+-webkit-pointer-events: none;
+   -moz-pointer-events: none;
+        pointer-events: none;
+z-index: 1;
+}
+
+.home-page-subtitle-carousel {
+width: 100%;
+height: auto;
+margin: 0 auto;
+}
+
+h1.home-page-title {
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 145px;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: -0.04em;
+color: #fff;
+margin: -13px auto 2px auto;
+width: 100%;
+line-height: 100%;
+position: relative;
+z-index: 1;
+}
+
+h1.home-page-title.light {
+color: #111;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1.home-page-title {
+    font-size: 105px;
+	margin: -13px auto 3px auto;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  h1.home-page-title {
+    font-size: 85px;
+	margin: -13px auto 6px auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1.home-page-title {
+    font-size: 65px;
+	margin: -13px auto 4px auto;
+  }
+}
+
+h2.home-page-title {
+font-family: 'Dosis', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 0.65em;
+color: #fff;
+margin: 0 0 0 3px;
+}
+
+h2.home-page-title.light,
+h2.home-page-title.light a {
+font-weight: 700;
+color: #111;
+}
+
+@media only screen and (max-width: 1200px) {
+  h2.home-page-title {
+    font-size: 12px;
+	margin: 0 0 0 4px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  h2.home-page-title {
+    font-size: 11px;
+	margin: 0 0 0 7px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h2.home-page-title {
+    font-size: 10px;
+	margin: 0 0 0 6px;
+  }
+}
+
+.alt h2 {
+font-family: 'Montserrat', sans-serif;
+font-size: 105px;
+font-weight: 700;
+line-height: 1;
+letter-spacing: -0.04em;
+color: #111;
+text-align: left;
+text-transform: uppercase;
+margin: 0 0 6px 0;
+padding: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .alt h2 {
+    font-size: 85px;
+	padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .alt h2 {
+    font-size: 65px;
+	padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .alt h2 {
+    font-size: 45px;
+  }
+}
+
+.alt h3 {
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+font-weight: 700;
+line-height: 1;
+letter-spacing: -0.04em;
+color: #111;
+text-align: left;
+text-transform: uppercase;
+margin: 44px 0 0 0;
+padding: 0;
+}
+
+
+/* dividers */
+.divider-post,
+.divider-post-contact {
+width: 100%;
+height: 100px;
+margin: 0 auto;
+display: none;
+visibility: hidden;
+}
+
+@media only screen and (max-width: 880px) {
+  .divider-post,
+  .divider-post-contact {
+    display: block;
+    visibility: visible;
+  }
+  
+  .divider-post {
+    height: 70px;
+  }
+  
+  .divider-post-contact {
+    height: 12px;
+  }
+}
+
+.divider-skillbar {
+width: 100%;
+height: 69px;
+margin: 0 auto;
+}
+
+@media only screen and (max-width: 880px) {
+  .divider-skillbar {
+    height: 25px;
+    margin: -118px 0 0 0;
+  }
+}
+
+
+/* page about */
+.section-about {
+background: #fff;
+padding: 134px 0 99px 0;
+overflow: visible;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-about {
+    padding: 105px 0 115px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-about {
+    padding: 68px 0 75px 0;
+  }
+}
+
+.section-about img {
+max-width: 100%;
+border: 20px solid #fff;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .section-about img {
+    max-width: 700px;
+  }
+  @media only screen and (max-width: 880px) {
+    .section-about img  {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .section-about img  {
+    border: none;
+  }
+}
+
+.about-section-images-carousel {
+display: -webkit-box;
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flexbox;
+display: -o-flex;
+display: flex;
+margin: 127px 0 0 0;
+height: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about-section-img:nth-of-type(1) {
+    margin: -25px -300px 0 0;
+  }
+  
+  .about-section-img:nth-of-type(2) {
+    position: relative;
+    /* bottom: -227px; */
+	bottom: -180px;
+	margin: 0 0 0 200px;
+  }
+  
+  .about-section-img:nth-of-type(3) {
+    margin: -100px 0 0 -100px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .about-section-images-carousel {
+    margin: 47px 0 0 0;
+  }
+}
+
+
+/* page facts */
+.section-facts {
+background: #000;
+padding: 4px 0 24px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 640px) {
+  .section-facts {
+    padding: 11px 0 24px 0;
+  }
+}
+
+
+/* facts counter */
+.facts-counter-wrapper {
+padding: 0;
+}
+
+.facts-counter-number {
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+font-weight: 400;
+line-height: 2;
+text-align: center;
+color: #fff;
+letter-spacing: 0.05em;
+}
+
+@media only screen and (max-width: 880px) {
+  .facts-counter-number {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .facts-counter-number {
+    font-size: 30px;
+  }
+}
+
+.facts-counter-description {
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+}
+
+.facts-counter-description .fa {
+font-size: 20px;
+color: #fff;
+margin: 0 10px 0 0;
+}
+
+@media only screen and (max-width: 880px) {
+  .facts-counter-description .fa {
+	display: block;
+	margin: 0 0 10px 0;
+  }
+}
+
+.facts-counter-title {
+font-size: 13px;
+letter-spacing: 0.05em;
+}
+
+@media only screen and (max-width: 640px) {
+  .facts-counter-title {
+    font-size: 11px;
+  }
+}
+
+
+/* page services */
+.section-services {
+background: #fff;
+padding: 134px 0 147px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-services {
+    padding: 105px 0 115px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-services {
+    padding: 68px 0 75px 0;
+  }
+}
+
+.services-move-down {
+margin-top: 200px;
+}
+
+@media only screen and (max-width: 880px) {
+  .services-move-down {
+    margin-top: 0;
+  }
+}
+
+.services-img {
+height: auto;
+margin: -13px 0 20px 0;
+font-size: 35px;
+text-align: center;
+color: #111;
+-webkit-transition: -webkit-transform 1s;
+   -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+     -o-transition: -o-transform 1s;
+        transition: transform 1s;
+}
+
+@media only screen and (max-width: 880px) {
+  .services-img {
+    margin: -8px 0 20px 0;
+  }
+}
+
+.services-hover:hover .services-img {
+-webkit-transform: rotateY(360deg);
+   -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+     -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+-webkit-transition: -webkit-transform 1s;
+   -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+     -o-transition: -o-transform 1s;
+        transition: transform 1s;
+}
+
+.services-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+color: #111;
+}
+
+.services-description {
+text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .services-description {
+    margin: 0 0 50px 0;
+	text-align: left;
+  }
+  
+  .services-description-last {
+   margin: 0;
+  }
+}
+
+h3 {
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+
+/* page works */
+.section-works {
+background: #fff;
+padding: 134px 0 130px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-works {
+    padding: 105px 0 95px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-works {
+    padding: 68px 0 55px 0;
+  }
+}
+
+
+/* works hover */
+.icon-works {
+position: absolute; 
+width: 100%;
+top: 50%;
+margin-left: 0;
+margin-top: 0;
+text-align: center;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transition: all 0.35s ease-out;
+   -moz-transition: all 0.35s ease-out;
+    -ms-transition: all 0.35s ease-out;
+	 -o-transition: all 0.35s ease-out;
+        transition: all 0.35s ease-out;
+-webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+-webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+z-index: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .icon-works {
+    margin-left: -15px;
+  }
+}
+
+.icon-works a {
+position: relative;
+display: inline-block;
+vertical-align: middle;
+text-decoration: none;
+width: 44px;
+height: 44px;
+line-height: 44px;
+margin: 0 4px;
+font-size: 20px;
+background: #fff;
+border: 1px solid #fff;
+color: #000;	
+-webkit-transition: all 0.35s ease-out;
+   -moz-transition: all 0.35s ease-out;
+    -ms-transition: all 0.35s ease-out;
+	 -o-transition: all 0.35s ease-out;
+        transition: all 0.35s ease-out;
+}
+
+.icon-works a.iw-slide-left {
+-webkit-transform: translate3d(-60px,0,0);
+   -moz-transform: translate3d(-60px,0,0);
+    -ms-transform: translate3d(-60px,0,0);
+     -o-transform: translate3d(-60px,0,0);
+        transform: translate3d(-60px,0,0);
+}
+
+.icon-works a.iw-slide-right {
+-webkit-transform: translate3d(60px,0,0);
+   -moz-transform: translate3d(60px,0,0);
+    -ms-transform: translate3d(60px,0,0);
+     -o-transform: translate3d(60px,0,0);
+        transform: translate3d(60px,0,0);
+}
+
+.image-works:hover .icon-works a {
+padding: 0;
+-webkit-transform: translate3d(0,0,0)!important;
+   -moz-transform: translate3d(0,0,0)!important;
+    -ms-transform: translate3d(0,0,0)!important;
+     -o-transform: translate3d(0,0,0)!important;
+        transform: translate3d(0,0,0)!important;
+}
+
+.icon-works a:hover {
+background: #000;
+border: 1px solid #000;
+color: #fff;
+}
+
+.icon-works a:hover:after {
+background: #000;
+}
+
+.image-works:hover .icon-works {
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.icon-works a:before {
+position: relative;
+z-index: 1;
+}
+
+.icon-works a i {
+position: relative;
+z-index: 1;
+}
+
+.image-works {
+position: relative;
+z-index: 5!important;
+}
+
+.hover-effect {
+position: absolute;
+background: #000;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
+width: -webkit-calc(100% - 80px);
+width: -moz-calc(100% - 80px);
+width: calc(100% - 80px);
+height: -webkit-calc(100% - 80px);
+height: -moz-calc(100% - 80px);
+height: calc(100% - 80px);
+top: 40px;
+left: 40px;
+bottom: 40px;
+right: 40px;
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+cursor: pointer;
+}
+
+@media only screen and (max-width: 880px) {
+  .hover-effect {
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: calc(100% - 40px);
+    height: -webkit-calc(100% - 40px);
+    height: -moz-calc(100% - 40px);
+    height: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+.image-works:hover .hover-effect {
+        opacity: 0.75;
+   -moz-opacity: 0.75;
+-webkit-opacity: 0.75;
+filter: alpha(opacity=75);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
+}
+
+.legendary-gallery {
+margin: -25px 0 0 0;
+position: relative;
+z-index: 0;
+}
+
+@media only screen and (max-width: 880px) {
+  .legendary-gallery {
+    margin: -20px 15px 0 15px;
+  }
+  
+  .legendary-gallery img {
+    border: 10px solid #fff;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .legendary-gallery {
+    margin: -20px 5px 0 5px;
+  }
+}
+
+.legendary-gallery figure {
+padding: 20px;
+}
+
+@media only screen and (max-width: 880px) {
+  .legendary-gallery figure {
+    padding: 0 0;
+  }
+}
+
+.legendary-gallery .img-caption {
+display: none;
+}
+
+
+/* page testimonials */
+.section-testimonials {
+background: #000;
+padding: 30px 0 25px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-testimonials {
+    padding: 35px 15px 30px 15px;
+  }
+}
+
+.testimonials-carousel,
+.testimonials-quote,
+.testimonials-quote-img {
+-webkit-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: all 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.testimonials-quote-img {
+position: relative;
+margin: 0 auto 26px auto;
+width: 100px;
+height: 100px;
+-webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+        border-radius: 50%;
+}
+
+.testimonials-quote p {
+color: #fff;
+font-size: 14px;
+text-align: center;
+}
+
+.testimonials-signature {
+color: #fff;
+font-size: 12px;
+text-align: center;
+margin-top: -1px;
+}
+
+.testimonials-signature:before {
+content: "― ";
+display: inline-block;
+}
+
+.section-testimonials.quote-mark-l {
+padding: 0 10px 0 0;
+}
+
+.section-testimonials.quote-mark-r {
+padding: 0 0 0 10px;
+}
+
+
+/* page news */
+.section-news {
+background: #f4f4f2;
+padding: 134px 0 147px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-news {
+    padding: 105px 0 115px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-news {
+    padding: 68px 0 75px 0;
+  }
+}
+
+.news-date {
+height: auto;
+margin: 0 0 20px 0;
+font-size: 12px;
+text-align: center;
+color: #111;
+-webkit-transition: -webkit-transform 1s;
+   -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+     -o-transition: -o-transform 1s;
+        transition: transform 1s;
+}
+
+@media only screen and (max-width: 880px) {
+  .news-date {
+    margin: 0 0 20px 0;
+  }
+}
+
+.news-hover:hover .news-date {
+-webkit-transform: rotateY(360deg);
+   -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+     -o-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+-webkit-transition: -webkit-transform 1s;
+   -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+     -o-transition: -o-transform 1s;
+        transition: transform 1s;
+}
+
+.news-title {
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+color: #111;
+}
+
+.news-description {
+text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  .news-description {
+    margin: 0 15px 50px 15px;
+	text-align: left;
+  }
+}
+
+.news-description a,
+.news-description a:hover {
+color: #000;
+}
+
+h3 {
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+
+/* page contact */
+.section-contact {
+background: #fff;
+padding: 134px 0 146px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-contact {
+    padding: 105px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-contact {
+    padding: 68px 0 146px 0;
+  }
+}
+
+.section-contact-subtitle {
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: 700;
+text-align: left;
+line-height: 1.3;
+color: #696c7b;
+padding: 50px 0 69px 0;
+margin: 0 auto;
+letter-spacing: normal;
+}
+
+@media only screen and (max-width: 640px) {
+  .section-contact-subtitle {
+    padding: 59px 0 69px 0;
+  }
+}
+	
+.section-contact-subtitle-first {
+color: #20202c;
+}
+
+
+/* contact form */
+.make-space {
+margin-left: 15px;
+margin-right: 15px;
+}
+
+#contact-form {
+width: 100%;
+margin: 123px auto 0 auto;
+padding: 0;
+text-align: center;
+}
+
+@media only screen and (max-width: 880px) {
+  #contact-form {
+    margin: 88px auto 0 auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #contact-form {
+    margin: 88px auto 35px auto;
+  }
+}
+
+form {
+margin: 0;
+padding: 0;
+}
+
+#form input {
+position: relative;
+width: 100%;
+height: 40px;
+border-bottom: 1px solid #111;
+border-left: none;
+border-right: none;
+border-top: none;
+padding: 5px 5px;
+background: none;
+margin: 5px;
+-webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+        transition: all 0.3s;
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+line-height: 1.5;
+font-style: normal;
+font-weight: normal;
+text-align: center;
+}
+
+#form input {
+margin: 10px 0 10px 0;
+}
+
+textarea {
+position: relative;
+width: 100%;
+height: 100px;
+border-bottom: 1px solid #111;
+border-left: none;
+border-right: none;
+border-top: none;
+padding: 5px 5px;
+background: none;
+margin: 5px;
+-webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+        transition: all 0.3s;
+font-family: 'Raleway', sans-serif;
+font-size: 14px;
+line-height: 1.5;
+font-style: normal;
+font-weight: normal;
+text-align: center;
+}
+
+#form textarea {
+margin: 10px 0 10px 0;
+} 
+
+#form input:hover,
+#form textarea:hover {
+border-color: rgba(0,0,0, .35);
+}
+
+.success {
+font-family: 'Dosis', sans-serif;
+font-size: 11px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0.15em;
+text-transform: uppercase;
+text-align: center;
+color: #111;
+margin: 0 auto;
+padding: 80px 0 0 0;
+line-height: 1;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#form .error {
+position: absolute;
+font-size: 9px;
+text-transform: uppercase;
+text-align: left;
+color: #5f5f5f;
+display: block;
+margin: -2px 0 0 1px;
+padding: 0;
+letter-spacing: 0.05em;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-input-placeholder {
+font-size: 12px;
+color: #111;
+}
+
+::-moz-placeholder {
+font-size: 12px;
+color: #111;
+}
+
+:-ms-input-placeholder {
+font-size: 12px;
+color: #111;
+}
+
+input:-moz-placeholder {
+font-size: 12px;
+color: #111;
+}
+
+.submit-button {
+position: relative;
+font-family: 'Dosis', sans-serif;
+font-size: 15px;
+line-height: 1.5;
+font-style: normal;
+text-transform: uppercase;
+text-align: center;
+font-weight: 400;
+letter-spacing: 0.05em;
+display: inline-block;
+outline: none;
+margin: 23px auto 13px auto;
+width: 225px;
+padding: 1px 0 0 0;
+height: 35px;
+border: none;
+color: #fff;
+background: #777;
+overflow: hidden;
+cursor: pointer;
+-webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+-webkit-transition: all 0.3s ease;
+   -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+	 -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+-webkit-transform: translate(0,0);
+   -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+     -o-transform: translate(0,0);
+        transform: translate(0,0);
+}
+
+.submit-button::before {
+position: absolute;
+content: '';
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+right: -100%;
+bottom: 0%;
+width: 200%;
+height: 200%;
+color: #fff;
+background: #111;
+-webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+-webkit-transform: skewX(-60deg);
+   -moz-transform: skewX(-60deg);
+    -ms-transform: skewX(-60deg);
+     -o-transform: skewX(-60deg);
+        transform: skewX(-60deg);
+-webkit-transition: all 0.4s ease;
+   -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+	 -o-transition: all 0.4s ease;
+	    transition: all 0.4s ease;
+z-index: -1;
+}
+
+.submit-button::before {
+-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+
+.submit-button:hover {
+color: #fff;
+background: #999;
+}
+
+.submit-button:hover::before {
+bottom: -100%;
+right: -200%;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+
+/* footer contact block */
+.footer-contact-block {
+position: relative;
+margin: -7px 0 0 0;
+text-align: left;
+}
+
+.footer-contact-block a {
+color: #111;
+}
+
+.footer-contact-block .email {
+position: relative;
+font-size: 20px;
+line-height: 0.5;
+}
+
+.footer-contact-block .email:after {
+content: "";
+position: absolute;
+display: block;
+width: 20px;
+height: 1px;
+left: 0;
+bottom: -10px;
+background-color: #111;
+-webkit-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+   -moz-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+    -ms-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+     -o-transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+        transition: width 300ms cubic-bezier(0.77, 0, 0.175, 1), background-color 300ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.footer-contact-block .email:hover {
+color: #111;
+}
+
+.footer-contact-block .email:hover:after {
+width: 100%;
+background-color: #111;
+}
+
+.footer-contact-block-label {
+font-family: 'Montserrat', sans-serif;
+display: block;
+font-size: 14px;
+font-weight: 700;
+text-align: left;
+text-transform: uppercase;
+color: #111;
+}
+
+
+/* --- ONAIR Footer Logo Fix (Definitiv) --- */
+.footer-logo {
+    display: block !important;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    min-height: 120px;
+    margin: 40px auto 25px auto !important; /* Kein riesiges 137px Margin mehr! */
+    cursor: pointer;
+   background-image: url('/img/logo.webp') !important; /* Greift direkt vom Domain-Root /img/logo.webp */
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.7));
+}
+
+@media only screen and (max-width: 880px) {
+    .footer-logo {
+        margin: 30px auto 20px auto !important;
+        width: 100px;
+        height: 100px;
+        min-height: 100px;
+    }
+}
+
+/* social icons footer */
+.social-icons-footer-wrapper {
+position: relative;
+margin: 10px auto 0 auto;
+padding: 0;
+text-align: center;
+}
+
+.social-icons-footer-wrapper ul {
+margin: 0 auto;
+padding: 0;
+list-style-type: none;
+}
+
+.social-icons-footer-wrapper ul li {
+display: inline;
+margin: 0 auto;
+padding: 0;
+}
+
+ul.social-icons-footer {
+margin: 0 auto;
+padding: 0;
+}
+
+ul.social-icons-footer a {
+font-size: 20px;
+padding: 0 5px 0 0;
+color: #000;
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+-webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+     -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+}
+
+ul.social-icons-footer a:hover {
+font-size: 20px;
+padding: 0 5px 0 0;
+color: #000;
+        opacity: 0.3;
+   -moz-opacity: 0.3;
+-webkit-opacity: 0.3;
+filter: alpha(opacity=30);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+-webkit-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+     -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+}
+
+.lineOT-footer {
+position: relative;
+width: 25%;
+height: 1px;
+overflow: hidden;
+margin: 12px auto 13px auto;
+}
+
+.copy {
+font-size: 9px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.copy a,
+.copy a:hover {
+color: #111;
+}
+
+
+/* page  maps */
+/* ---  MAPS BLOCK AUF LEAFLET UPGRADEN --- */
+
+.section-google-maps {
+    background: #fff;
+    width: 100%;
+    /* Von 300px auf 600px erhöht für einen epischen Blick über München */
+    height: 600px; 
+    padding: 0;
+    margin-top: -4px;
+    /* Wir erlauben dem Full-Width-Breakout, sichtbar zu sein */
+    overflow: visible; 
+    z-index: 1;
+}
+
+/* Anpassung für kleinere Bildschirme (Tablets) */
+@media only screen and (max-width: 880px) {
+    .section-google-maps {
+        height: 500px;
+        margin-top: -3px;
+    }
+}
+
+/* Anpassung für Smartphones (Mobile) */
+@media only screen and (max-width: 640px) {
+    .section-google-maps {
+        /* Genug Höhe auch auf dem Handy, damit es geil aussieht */
+        height: 400px; 
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Der Wrapper, in dem unsere Map liegt */
+#map-wrapper {
+    position: relative;
+    width: 100%;
+    /* Muss haargenau mit der Höhe von oben übereinstimmen */
+    height: 600px; 
+    overflow: visible;
+}
+
+/* Falls auf Mobile das Smartphone-Design greift, passen wir den Wrapper an */
+@media only screen and (max-width: 640px) {
+    #map-wrapper {
+        height: 400px;
+    }
+}
+
+#map {
+    /* Magischer CSS-Filter für den ultimativen Dark-Vibe */
+    filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    
+    /* Dieser Trick bricht aus jedem engen Container aus und macht die Map 100% bildschirmfüllend */
+    width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* page footer */
+.section-footer {
+background: #fff;
+padding: 18px 0 146px 0;
+overflow: hidden;
+z-index: 1;
+}
+
+@media only screen and (max-width: 880px) {
+  .section-footer {
+    padding: 18px 0 110px 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .section-footer {
+    padding: 18px 0 70px 0;
+  }
+}
+
+
+/* center container */
+.center-container {
+position: absolute;
+display: table;
+table-layout: fixed;
+width: 100%;
+height: 100%;
+background: none;
+}
+
+.center-block {
+display: table-cell;
+vertical-align: middle;
+}
+
+
+/* preloader */
+/* --- ULTRACLEANER WEB3 PRELOADER (DARK-MODE) --- */
+
+#preloader {
+    position: fixed;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #0a0a0a !important; /* Tiefes, edles Space-Schwarz statt Weiß! */
+    z-index: 999999;
+}
+
+#preloader-status {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.preloader-position {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+}
+
+/* Der rotierende Neon-Ring im ONAIR-Cyan */
+.loader {
+    position: relative;
+    width: 100px !important;
+    height: 100px !important;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px !important; /* Perfekt zentriert bei 100px Breite */
+    margin-top: -50px !important;
+    -webkit-animation: rotate 1.2s infinite linear;
+    -moz-animation: rotate 1.2s infinite linear;
+    -ms-animation: rotate 1.2s infinite linear;
+    -o-animation: rotate 1.2s infinite linear;
+    animation: rotate 1.2s infinite linear;
+    border: 2px solid rgba(0, 255, 255, 0.1) !important; /* Dezenter Cyan-Ring im Hintergrund */
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Der leuchtende, rotierende Bogen */
+.loader span {
+    position: absolute;
+    width: 100px !important;
+    height: 100px !important;
+    top: -2px !important;
+    left: -2px !important;
+    border: 2px solid transparent !important;
+    border-top: 2px solid #00ffff !important; /* Das legendäre ONAIR-Cyan! */
+    border-radius: 50%;
+}
+
+/* Dein OA-Logo im absoluten Zentrum, das im Takt pulsiert */
+.preloader-logo {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulseLogo 2s infinite ease-in-out;
+}
+
+/* --- SEIDENWEICHE WEB3 ANIMATIONEN --- */
+
+/* Sanftes Atmen für das Logo */
+@keyframes pulseLogo {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.05);
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    }
+}
+
+/* Web3 Standard Rotation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* ken burns slideshow */
+.kenburns-slide-wrapper {
+position: relative;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+overflow: hidden;
+z-index: 0;
+}
+
+.kenburns-slide {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+-webkit-animation: KenBurnsSlideShow 24s linear infinite 0s;
+   -moz-animation: KenBurnsSlideShow 24s linear infinite 0s;
+    -ms-animation: KenBurnsSlideShow 24s linear infinite 0s;
+     -o-animation: KenBurnsSlideShow 24s linear infinite 0s;
+        animation: KenBurnsSlideShow 24s linear infinite 0s;
+}
+
+.kenburns-slide-1 {
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+    -ms-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+}
+
+.kenburns-slide-2 {
+-webkit-animation-delay: 6s;
+   -moz-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+     -o-animation-delay: 6s;
+        animation-delay: 6s;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+    -ms-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+}
+
+.kenburns-slide-3 {
+-webkit-animation-delay: 12s;
+   -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+     -o-animation-delay: 12s;
+        animation-delay: 12s;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+    -ms-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+}
+
+.kenburns-slide-4 {
+-webkit-animation-delay: 18s;
+   -moz-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+     -o-animation-delay: 18s;
+        animation-delay: 18s;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+   -moz-background-size: cover;
+    -ms-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+}
+
+@-webkit-keyframes KenBurnsSlideShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+}
+ 5% {
+    opacity: 1
+}
+ 25% {
+    opacity: 1;
+}
+ 30% {
+    opacity: 0;
+    -webkit-transform: scale(1.1);
+}
+ 100% {
+    opacity: 0;
+    -webkit-transformm: scale(1);
+    }
+}
+
+@-moz-keyframes KenBurnsSlideShow {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1);
+}
+ 5% {
+    opacity: 1
+}
+ 25% {
+    opacity: 1;
+}
+ 30% {
+    opacity: 0;
+    -moz-transform: scale(1.1);
+}
+ 100% {
+    opacity: 0;
+    -moz-transform: scale(1);
+    }
+}
+
+@-o-keyframes KenBurnsSlideShow {
+  0% {
+    opacity: 0;
+    -o-transform: scale(1);
+}
+ 5% {
+    opacity: 1
+}
+ 25% {
+    opacity: 1;
+}
+ 30% {
+    opacity: 0;
+    -o-transform: scale(1.1);
+}
+ 100% {
+    opacity: 0;
+    -o-transform: scale(1);
+    }
+}
+
+@keyframes KenBurnsSlideShow {
+  0% {
+    opacity: 0;
+	    transform: scale(1);
+    -ms-transform: scale(1);
+}
+ 5% {
+    opacity: 1
+}
+ 25% {
+    opacity: 1;
+}
+ 30% {
+    opacity: 0;
+	    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+ 100% {
+    opacity: 0;
+	    transform: scale(1);
+    -ms-transform: scale(1);
+    }
+}
+
+
+/* HTML5 video */
+/* --- HTML5 background video fixes --- */
+
+/* 1. Der Container, der das Video im Vollbild hält */
+.hero-fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Schiebt alles hinter das Text-Overlay */
+}
+
+/* 2. Das Video-Element selbst */
+.hero-fullscreen video,
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Gleiche Ebene wie der Container */
+}
+
+/* 3. Mobilgeräte-Optimierung */
+@media only screen and (max-width: 880px) {
+    .hero-fullscreen video,
+    .background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* the wall */
+#viewport {
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+overflow: hidden;
+background: none;
+}
+
+#wall {
+z-index: 1;
+}
+
+.wall-item-description {
+position: absolute;
+color: #fff;
+font-size: 9px;
+line-height: 120%;
+bottom: 21px;
+left: 15px;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+text-shadow: 1px 1px 2px #111;
+padding: 5px 10px;
+/* background: rgba(17, 17, 17, .75); */
+}
+
+.slideshow li {
+visibility: hidden;
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.slideshow, .slideshow li {
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+/* skills bar */
+.show-skillbar {
+position: relative;
+margin: 23px 0 0 0;
+}
+
+.skillbar {
+position: relative;
+display: inline-block;
+width: 100%;
+height: 21px;
+margin: 0 0 30px 0;
+background: none;
+}
+
+.skillbar-title {
+position: absolute;
+width: 100px;
+height: 21px;
+line-height: 21px;
+top: 0;
+left: 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 10px;
+font-weight: 400;
+text-transform: uppercase;
+color: #111;
+background: #fff;
+padding: 0;
+}
+
+.skillbar-bar {
+display: inline-block;
+width: 0px;
+height: 3px;
+background: #111;
+margin: 0 0 3px 0;
+}
+
+.skill-bar-percent {
+position: absolute;
+height: auto;
+line-height: 1;
+top: -21px;
+right: 0;
+color: #111;
+font-size: 11px;
+}
+
+
+/* Owl Carousel v2.2.0 CUSTOM */
+.owl-buttons {
+position: static;
+}
+
+.owl-prev,
+.owl-next {
+position: absolute;
+display: block;
+top: 50%;
+margin-top: -29px;
+width: 56px;
+height: 56px;
+line-height: 56px;
+font-size: 14px;
+color: #111;
+text-align: center;
+-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+     -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        opacity: 0;
+   -moz-opacity: 0;
+-webkit-opacity: 0;
+filter: alpha(opacity=0);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.owl-prev {
+left: -50px;
+}
+
+.owl-next {
+right: -50px;
+}
+
+.owl-prev:before,
+.owl-next:before {
+content: "";
+display: block;
+width: 66%;
+height: 66%;
+position: absolute;
+background: rgba(255, 255, 255, 1);
+-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+   -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+     -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+        transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.owl-prev:before {
+left: 35px;
+top: 9px;
+}
+
+.owl-next:before {
+right: 35px;
+top: 9px;
+}
+
+.owl-prev .fa,
+.owl-next .fa {
+position: relative;
+}
+
+.owl-prev .fa {
+position: relative;
+left: 24px;
+}
+
+.owl-next .fa {
+position: relative;
+right: 24px;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+-webkit-transition: 0 none;
+   -moz-transition: 0 none;
+	-ms-transition: 0 none;
+     -o-transition: 0 none;
+        transition: 0 none;
+}
+
+.owl-prev:hover:before,
+.owl-next:hover:before,
+.owl-prev:active:before,
+.owl-next:active:before,
+.owl-carousel:hover .owl-prev,
+.owl-carousel:hover .owl-next {
+        opacity: 1;
+   -moz-opacity: 1;
+-webkit-opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.owl-carousel:hover .owl-prev {
+left: -35px;
+}
+
+.owl-carousel:hover .owl-next {
+right: -35px;
+}
+
+
+/* play video button */
+.play-video-btn {
+position: relative;
+text-align: center;
+margin-top: 20px;
+ -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+z-index: 1;
+}
+
+.play-video-btn a,
+.play-video-btn a:hover {
+font-size: 40px;
+color: #fff;
+text-decoration: none;
+}
+/* Sound Control Button - Unten Rechts */
+#sound-control {
+    position: fixed;
+    bottom: 50px;  /* Etwas mehr Luft nach unten */
+    right: 50px;   /* Symmetrisch zu den 50px deines Logos auf der linken Seite! */
+    z-index: 999999 !important;
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.6); /* Edler, dunkler Kreis */
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    pointer-events: auto !important; /* Macht den Klick unblockierbar */
+    transition: all 0.3s ease;
+}
+
+#sound-control svg {
+    stroke: #ffffff !important;
+}
+
+#sound-control:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Wenn der Sound aktiv ist, leuchtet der Kreis im ONAIR-Cyan */
+.sound-active {
+    color: #1ed0e7 !important;
+    border-color: rgb(8, 180, 233) !important;
+    box-shadow: 0 0 20px rgba(5, 104, 18, 0.4) !important;
+}
+
+.sound-active svg {
+    stroke: #0fe4e7 !important;
+}
+/* --- New Hero Text Styling --- */
+
+/* Container zentriert alles auf dem Bildschirm */
+.hero-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10; /* Höher als das Video (Z-Index 1) */
+    pointer-events: none;
+}
+
+.hero-text-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Der dicke Haupttitel */
+.hero-title {
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* Gibt Tiefe vor dem Video */
+}
+
+/* Elegante Trennlinie */
+.hero-divider {
+    width: 80px;
+    height: 3px;
+    background-color: #1ed0e7; /* Passt zum Cyan-Vibe aus deinem Video und Pool! */
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(2, 234, 255, 0.853);
+}
+
+/* Der Untertitel */
+.hero-subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 8px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    text-transform: uppercase;
+    text-align: justify;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Anpassung für Smartphones */
+@media only screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+    .hero-subtitle {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+    .hero-divider {
+        width: 50px;
+        margin: 15px auto;
+    }
+}
+/* --- ULTIMATIVER ONAIR GLOW FÜR HELLEN/WEISSEN FOOTER --- */
+
+/* 1. Grundzustand: Edles, mattes Anthrazit für perfekten Kontrast auf weißem Grund */
+.social-icons-footer li a,
+.tiktok-link,
+.x-link {
+    color: #1a1a1a !important; /* Kräftiges Dunkelgrau/Schwarz */
+    opacity: 0.8;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Hover-Zustand: Ein sattes, extrem kontrastreiches Cyber-Cyan mit sanftem Glow */
+.social-icons-footer li a:hover,
+.tiktok-link:hover,
+.x-link:hover {
+    color: #00a8a8 !important; /* Etwas satteres Cyan, damit es auf weißem Grund richtig knallt */
+    opacity: 1;
+    transform: translateY(-4px) scale(1.15); /* Perfekter Bounce nach oben */
+    
+    /* Weicher, edler Schatteneffekt, der auf Weiß super clean wirkt */
+    filter: drop-shadow(0 2px 5px rgba(0, 168, 168, 0.35)); 
+}
+
+/* 3. SVG-Absicherung für X & TikTok */
+.tiktok-link svg,
+.x-link svg {
+    fill: currentColor !important;
+    transition: fill 0.3s ease !important;
+}
+/* --- LEAFLET MAP DARK-MODE & CYAN GLOW --- */
+#map {
+    /* Magischer CSS-Filter, der die OpenStreetMap-Farben invertiert und auf Dark-Vibe trimmt */
+    filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Der pulsierende Effekt für deinen ONAIR-Marker auf der Karte */
+.onair-map-marker div {
+    animation: pulseMarker 2s infinite;
+}
+
+@keyframes pulseMarker {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 255, 255, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 255, 255, 0);
+    }
+}
+/* Legacy Sektion: Edler, dunkler Raum */
+#legacy {
+    background: #0a0a0a !important; /* Tiefes Schwarz */
+    color: #ffffff !important;
+}
+
+#legacy .section-title {
+    color: #04c4f9 !important; /* Cyan Überschrift */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Quote-Box edler gestalten */
+.quotations {
+    border-left: 2px solid #04c4f9 !important;
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+/* Skills -> Core Pillars (keine Balken, sondern clean) */
+.skillbar-title {
+    color: #04c4f9 !important;
+    font-weight: 800;
+}
+/* Legacy Sektion: Typografie Update */
+#legacy .section-title {
+    font-size: 64px !important; /* Deutlich größer */
+    color: #ffffff !important;
+}
+
+#legacy .section-all-subtitle-second {
+    font-size: 42px !important; /* Bio-Überschriften größer */
+    color: #04c4f9 !important;
+}
+
+#legacy p {
+    font-size: 28px !important; /* Bessere Lesbarkeit für Bio-Texte */
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+.core-pillar-title {
+    font-size: 23px !important;
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
+/* --- GLOBALER TEXT-BOOST --- */
+
+/* 1. Globaler Standard-Text (p) */
+p {
+    font-size: 18px !important;       /* Von 14px hochgeschraubt für fette Web3-Optik */
+    line-height: 1.75 !important;    /* Mehr Zeilenabstand für ein cleanes Lesegefühl */
+    font-weight: 300 !important;      /* Elegant und dünn, aber groß */
+    color: #cccccc !important;        /* Edles Off-White statt hartem Weiß */
+    letter-spacing: 0.5px !important; /* Minimaler Abstand für modernste Typografie */
+}
+
+/* 2. Die Projekt-Details in der Discography (p) */
+.col-md-4 p {
+    font-size: 17px !important;       /* Perfekt ausbalanciert für Spalten */
+    line-height: 1.6 !important;
+    color: #999999 !important;        /* Etwas dezenter als die Haupt-Bio */
+}
+
+/* 3. Wenn du Links in den Texten hast */
+p a {
+    font-size: 18px !important;
+    color: #04c4f9 !important;        /* ONAIR-Cyan für Links */
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+p a:hover {
+    border-bottom: 1px solid #00ffff;
+}
+/* ==========================================================================
+   GLOBAL ONAIR DARK MODE & BRANDING (#04c4f9)
+   ========================================================================== */
+
+/* 1. Der totale Black-Out für die gesamte Seite */
+body, 
+html, 
+#main-wrapper, /* Passe das an, falls dein Template eine Wrapper-ID nutzt */
+.main-container {
+    background-color: #000000 !important;
+    color: #cccccc !important;
+}
+
+/* 2. Alle Standard-Sektionen auf tiefschwarz zwingen */
+.section, 
+.section-about, 
+.section-contact, 
+.section-services,
+#nexus, 
+#legacy, 
+#medias, 
+#archive, 
+#cast, 
+#signal {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 3. Globales Scrollbar-Upgrade (Sieht auf Windows/Chrome brutal edel aus!) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #04c4f9; /* Dein Marken-Blau */
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+   AKZENTE AUF DEIN NEUES ONAIR-BLAU (#04c4f9) ANPASSEN
+   ========================================================================== */
+
+/* Buttons & Links */
+a, .section-links {
+    color: #04c4f9 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffffff !important;
+}
+
+/* Suchfeld-Focus (Der leuchtende Unterstrich im Terminal) */
+.input-search input[type="text"]:focus {
+    border-bottom: 2px solid #04c4f9 !important;
+    filter: drop-shadow(0 2px 8px rgba(4, 196, 249, 0.5)) !important;
+}
+
+/* Biography & Discography Überschriften */
+.section-all-subtitle-second {
+    color: #04c4f9 !important;
+}
+
+/* Sound-Control Button & SVG */
+#sound-control {
+    border: 1px solid rgba(4, 196, 249, 0.3) !important;
+}
+#sound-control:hover, 
+.sound-active {
+    border-color: #04c4f9 !important;
+    box-shadow: 0 0 12px rgba(4, 196, 249, 0.4) !important;
+}
+#sound-control svg {
+    stroke: #04c4f9 !important;
+}
+/* ==========================================================================
+   ONAIR TOTAL BLACKOUT FIX (WEISSE BEREICHE ENTFERNEN)
+   ========================================================================== */
+
+/* 1. Den Page-Wrapper auf schwarz setzen, damit kein weißer Hintergrund durchschimmert */
+.page-wrapper {
+    background: #000000 !important;
+}
+
+/* 2. Alle spezifischen Sektions-Hintergründe auf tiefschwarz zwingen */
+.section-about,
+.section-services,
+.section-works,
+.section-news,
+.section-contact,
+.section-footer,
+.section-google-maps,
+#legacy,
+#nexus,
+#medias,
+#archive,
+#cast,
+#signal {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    color: #cccccc !important;
+}
+
+/* 3. Alle standardmäßig dunklen Titel-After-Elemente (die kleinen Linien unter Titeln) auf dein Blau anpassen */
+.section-links:after, 
+.section-title:after,
+.section-title:before,
+.footer-contact-block .email:after {
+    background-color: #04c4f9 !important;
+}
+
+/* 4. Verhindern, dass Galerien oder Container weiße Rahmen oder Hintergründe erzwingen */
+.legendary-gallery img,
+.section-about img {
+    border: 5px solid #111111 !important; /* Dunkler, edler Rahmen statt weiß */
+}
+
+/* 5. Footer Kontakt-Block Texte auf hellen Text umstellen, damit man sie auf Schwarz lesen kann */
+.footer-contact-block,
+.footer-contact-block-label,
+.footer-contact-block a,
+.copy,
+.copy a {
+    color: #ffffff !important;
+}
+
+/* 6. Formular-Felder (Contact-Form) an den Dark-Mode anpassen, damit sie nicht weiß sind */
+#form input,
+textarea {
+    border-bottom: 1px solid #04c4f9 !important;
+    color: #ffffff !important;
+}
+#form input:hover,
+textarea:hover {
+    border-color: #ffffff !important;
+}
+/* ==========================================================================
+   ISOLIERTER ONAIR-STYLE: MEDIAS-SECTION
+   ========================================================================== */
+
+/* 1. Sektions-Hintergrund auf tiefes Schwarz setzen */
+.onair-medias-section {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 2. Haupt-Titel "Medias" stylen (Groß, weiß, mit blauem Unterstrich) */
+.onair-medias-section .section-title {
+    font-size: 64px !important;
+    color: #ffffff !important;
+}
+
+.onair-medias-section .section-title:after {
+    background-color: #04c4f9 !important; /* Dein ONAIR-Blau */
+}
+
+/* 3. Subtitle-Bereich (Texte unter der Hauptüberschrift) */
+.onair-medias-section .section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+}
+
+.onair-medias-section .section-all-subtitle-first {
+    color: #ffffff !important; /* Strahlendes Weiß für den ersten Satz */
+}
+
+/* 4. Die vier Service-Boxen (Titel & Beschreibungen) */
+.onair-medias-section .services-title {
+    color: #04c4f9 !important; /* Die Überschriften der Boxen in ONAIR-Blau */
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+.onair-medias-section .services-description {
+    color: #cccccc !important; /* Angenehmes Hellgrau für Lesbarkeit */
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* 5. Icons in den Boxen */
+.onair-medias-section .services-img {
+    color: #ffffff !important;
+    transition: transform 0.5s ease;
+}
+
+.onair-medias-section .services-hover:hover .services-img {
+    color: #04c4f9 !important; /* Icon glüht blau beim Hovern */
+}
+
+/* 6. Links innerhalb der Beschreibungen */
+.onair-medias-section .section-links {
+    color: #04c4f9 !important;
+}
+
+.onair-medias-section .section-links:hover {
+    color: #ffffff !important;
+}
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: ARCHIVE-SECTION (CYBER GLOW)
+   ========================================================================== */
+
+/* 1. Sektions-Hintergrund auf tiefschwarz zwingen */
+body .section.section-works.onair-archive-section,
+body #archive {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 2. Titel "Archive" & Unterstrich stylen */
+body #archive .section-title {
+    font-size: 64px !important;
+    color: #ffffff !important;
+}
+
+body #archive .section-title:after {
+    background-color: #04c4f9 !important;
+}
+
+/* 3. Subtitle-Bereich */
+body #archive .section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+}
+
+body #archive .section-all-subtitle-first {
+    color: #ffffff !important;
+}
+
+/* 4. Weisse Rahmen um die Bilder im Archiv restlos vernichten */
+body #archive .legendary-gallery img,
+body #archive img {
+    border: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* 5. Der Hover-Effekt (Abgedunkelte Scheibe über dem Bild) */
+body #archive .hover-effect {
+    background: rgba(0, 0, 0, 0.8) !important; /* Matte, dunkle Scheibe */
+}
+
+/* 6. Die runden Hover-Buttons (Plus & Share) auf ONAIR-Style trimmen */
+body #archive .icon-works a {
+    background: #000000 !important;
+    border: 1px solid #04c4f9 !important; /* ONAIR-Blaues Gehäuse */
+    color: #04c4f9 !important; /* Blaue Symbole */
+    border-radius: 50% !important; /* Perfekter Kreis */
+    box-shadow: 0 0 10px rgba(4, 196, 249, 0.2) !important;
+    opacity: 1 !important;
+}
+
+/* Hover-Zustand für die Galerie-Buttons im Archiv */
+body #archive .icon-works a:hover {
+    background: #04c4f9 !important; /* Knopf füllt sich mit Blau */
+    color: #000000 !important; /* Plus-Symbol wird schwarz */
+    border-color: #ffffff !important; /* Weißer Außenring */
+    box-shadow: 0 0 20px rgba(4, 196, 249, 0.8) !important; /* Starker Neon Glow! */
+}
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: BROADCAST-SECTION (NEWS)
+   ========================================================================== */
+
+/* 1. Sektions-Hintergrund radikal auf schwarz zwingen */
+body .section.section-news.onair-cast-section,
+body #cast {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 2. Titel "Broadcast" & der ONAIR-blaue Unterstrich */
+body #cast .section-title {
+    font-size: 64px !important;
+    color: #ffffff !important;
+}
+
+body #cast .section-title:after {
+    background-color: #04c4f9 !important;
+}
+
+/* 3. Subtitle-Bereich */
+body #cast .section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+}
+
+body #cast .section-all-subtitle-first {
+    color: #ffffff !important;
+}
+
+/* 4. Das News-Karussell (Einzelne Boxen & Hover-States) */
+body #cast .news-hover {
+    background: #050505 !important; /* Minimal helleres Schwarz für geile Kartentiefe */
+    border: 1px solid #111111 !important;
+    padding: 30px !important;
+    border-radius: 8px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* Hover-Effekt: Box leuchtet bläulich */
+body #cast .news-hover:hover {
+    border-color: #04c4f9 !important;
+    box-shadow: 0 0 20px rgba(4, 196, 249, 0.25) !important;
+}
+
+/* 5. Texte innerhalb der News-Karten */
+body #cast .news-date {
+    color: #04c4f9 !important; /* News-Kategorie / Datum in ONAIR-Blau */
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 15px !important;
+}
+
+body #cast .news-title {
+    color: #ffffff !important; /* Strahlend weißer News-Titel */
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+}
+
+body #cast .news-description {
+    color: #aaaaaa !important; /* Dezent lesbares Grau für die Beschreibung */
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+}
+
+/* 6. Falls das Karussell Navigations-Punkte (Dots) oder Buttons hat */
+body #cast .owl-dot.active span {
+    background: #04c4f9 !important;
+}
+
+body #cast .owl-dot span {
+    background: #333333 !important;
+}
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: SIGNAL-SECTION (CONTACT & FORM)
+   ========================================================================== */
+
+/* 1. Sektions-Hintergrund pechschwarz machen */
+body .section.section-contact.onair-signal-section,
+body #signal {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 2. Titel "Signal" & ONAIR-Unterstrich */
+body #signal .section-title {
+    font-size: 64px !important;
+    color: #ffffff !important;
+}
+
+body #signal .section-title:after {
+    background-color: #04c4f9 !important;
+}
+
+/* 3. Subtitle-Bereich */
+body #signal .section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+}
+
+body #signal .section-all-subtitle-first {
+    color: #ffffff !important;
+}
+
+/* 4. Contact-Details (Address, Telegram, Email) */
+body #signal .footer-contact-block {
+    color: #ffffff !important;
+    font-size: 16px !important;
+}
+
+body #signal .footer-contact-block-label {
+    color: #04c4f9 !important; /* Labels in Blau */
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+}
+
+body #signal .footer-contact-block a.email {
+    color: #ffffff !important;
+    transition: color 0.3s ease !important;
+}
+
+body #signal .footer-contact-block a.email:hover {
+    color: #04c4f9 !important;
+}
+
+body #signal .footer-contact-block .email:after {
+    background-color: #04c4f9 !important;
+}
+
+/* 5. Das Formular (Inputs und Textarea) */
+body #signal #form input,
+body #signal textarea {
+    background: rgba(10, 10, 10, 0.8) !important; /* Dunkler, dezenter Eingabe-Hintergrund */
+    border-bottom: 2px solid #333333 !important; /* Edle, dunkle Linie */
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    color: #ffffff !important; /* Weißer Text beim Schreiben */
+    font-size: 16px !important;
+    padding: 15px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Platzhalter-Text anpassen */
+body #signal #form input::placeholder,
+body #signal textarea::placeholder {
+    color: #555555 !important;
+    font-size: 14px !important;
+}
+
+/* Focus-Zustand (Klick ins Eingabefeld) -> NEON GLOW! */
+body #signal #form input:focus,
+body #signal textarea:focus {
+    border-bottom: 2px solid #04c4f9 !important;
+    filter: drop-shadow(0 2px 8px rgba(4, 196, 249, 0.4)) !important;
+    background: rgba(15, 15, 15, 0.9) !important;
+}
+
+/* Hover auf den Input-Feldern */
+body #signal #form input:hover,
+body #signal textarea:hover {
+    border-color: #555555 !important;
+}
+
+/* 6. Der Sende-Button (Submit Button) */
+body #signal .submit-button {
+    background: #000000 !important;
+    border: 2px solid #04c4f9 !important; /* Blauer Rahmen */
+    color: #04c4f9 !important; /* Blauer Text */
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+body #signal .submit-button:hover {
+    background: #04c4f9 !important; /* Füllt sich blau */
+    color: #000000 !important; /* Text wird schwarz */
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.924) !important; /* Neon-Glow */
+    border-color: #04c4f9 !important;
+}
+
+body #signal .submit-button::before {
+    display: none !important; /* Alten schrägen Hintergrund-Hover-Effekt deaktivieren */
+}
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: FOOTER-SECTION
+   ========================================================================== */
+
+/* 1. Hintergrund des gesamten Footers pechschwarz machen */
+body .section-footer.onair-footer-section {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    border-top: 1px solid #111111 !important; /* Sehr feine, edle Trennlinie */
+    padding: 80px 0 80px 0 !important; /* Etwas kompakter und symmetrischer */
+}
+
+/* 2. Das runde ONAIR Footer-Logo perfekt sichtbar machen (Ohne Whiteout) */
+body .onair-footer-section .footer-logo {
+    background: url(../img/logo.png) no-repeat center center !important;
+    background-size: contain !important;
+    mix-blend-mode: normal !important; /* Verhindert das Absaufen auf Schwarz */
+    filter: drop-shadow(0 0 12px rgba(4, 196, 249, 0.3)) !important; /* Dezenter blauer Schein */
+    width: 120px !important;
+    height: 120px !important;
+    margin: 0 auto 30px auto !important;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out !important;
+}
+
+body .onair-footer-section .footer-logo:hover {
+    transform: scale(1.05) !important;
+    filter: drop-shadow(0 0 20px rgba(4, 196, 249, 0.7)) !important; /* Leuchtet auf beim Hovern! */
+}
+
+/* 3. Alle standardmäßigen Social Icons (WhatsApp, Telegram, Instagram) auf Weiß setzen */
+body .onair-footer-section .social-icons-footer li a,
+body .onair-footer-section .social-icons-footer li a i {
+    color: #ffffff !important;
+    opacity: 0.8 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* 4. Die SVGs für X & TikTok ebenfalls strahlend weiß machen */
+body .onair-footer-section .x-link svg,
+body .onair-footer-section .tiktok-link svg {
+    fill: #ffffff !important;
+    opacity: 0.8 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+/* 5. HOVER-STATES: Alle Footer-Icons leuchten in ONAIR-Blau! */
+body .onair-footer-section .social-icons-footer li a:hover,
+body .onair-footer-section .social-icons-footer li a:hover i {
+    color: #04c4f9 !important;
+    opacity: 1 !important;
+    transform: translateY(-3px) scale(1.1) !important;
+}
+
+body .onair-footer-section .x-link:hover svg,
+body .onair-footer-section .tiktok-link:hover svg {
+    fill: #04c4f9 !important;
+    opacity: 1 !important;
+    filter: drop-shadow(0 0 8px rgba(4, 196, 249, 0.5)) !important;
+}
+
+/* 6. Die Trennlinie im Footer (lineOT) in feines ONAIR-Blau tauchen */
+body .onair-footer-section .lineOT-footer {
+    background-color: #04c4f9 !important;
+    width: 80px !important; /* Kleiner und edler */
+    height: 2px !important;
+    margin: 25px auto 25px auto !important;
+    opacity: 0.6 !important;
+}
+
+/* 7. Copyright-Schrift auf edles Grau/Off-White anpassen */
+body .onair-footer-section .copy,
+body .onair-footer-section .copy a {
+    color: #666666 !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    transition: color 0.3s ease !important;
+}
+
+body .onair-footer-section .copy a:hover {
+    color: #04c4f9 !important;
+}
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: NAVIGATION (CYBER LIGHTS ON BLACK)
+   ========================================================================== */
+
+/* 1. Transparenter Header & Sticky-Zustand (Pechschwarz beim Scrollen) */
+body .main-navigation {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease-in-out !important;
+}
+
+body .main-navigation.reduce-height {
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Dunkelt edel ab beim Scrollen */
+    border-bottom: 1px solid #111111 !important;
+}
+
+/* 2. Alle Menü-Links strahlend weiß machen */
+body .main-navigation .main-inner-navigation ul li a {
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8) !important; /* Schützt Lesbarkeit vor Videos */
+    transition: color 0.3s ease !important;
+}
+
+/* 3. HOVER & ACTIVE-STATES: Leuchtendes ONAIR-Blau */
+body .main-navigation .main-inner-navigation ul li a:hover,
+body .main-navigation .main-inner-navigation ul li a.active {
+    color: #04c4f9 !important;
+    text-shadow: 0 0 10px rgba(4, 196, 249, 0.6) !important;
+}
+
+/* 4. Die schwebende Unterlinie bei Hover blau färben */
+body .main-navigation .link-underline:before {
+    background: #04c4f9 !important;
+}
+
+/* 5. Der Search-Button (Lupe & Text) */
+body .main-navigation .search-modal-launcher a {
+    color: #ffffff !important;
+}
+
+body .main-navigation .search-modal-launcher a:hover {
+    color: #04c4f9 !important;
+}
+
+body .main-navigation .search-modal-launcher a i {
+    color: #04c4f9 !important; /* Lupe leuchtet immer blau */
+    margin-right: 5px;
+}
+
+/* 6. Logo-Position & Größe absichern */
+body .main-navigation-logo img {
+    filter: drop-shadow(0 0 8px rgba(4, 196, 249, 0.3)) !important;
+}
+
+/* 
+
+### 2. Der unzerstörbare CSS-Block 
+
+Füge diesen Block wieder **ganz unten** in deine funktionierende `style.css` ein. Er sorgt dafür, dass dieser Bereich pechschwarz bleibt, die Nummern weiß strahlen und die Symbole in deinem ONAIR-Blau `#04c4f9` leuchten:
+
+```css */
+/* ==========================================================================
+   ULTRA SPECIFIC ONAIR-STYLE: FACTS-SECTION (STUDIO COUNTER)
+   ========================================================================== */
+
+/* 1. Hintergrund der Sektion pechschwarz */
+body .section.section-facts.onair-facts-section,
+body #facts {
+    background: #000000 !important;
+    background-color: #000000 !important;
+    padding: 80px 0 !important; /* Etwas kompakteres Design */
+    border-bottom: 1px solid #111111 !important;
+}
+
+/* 2. Die großen Zahlen (Weiß und fett) */
+body #facts .facts-counter-number {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 10px !important;
+}
+
+/* 3. Icons in deinem ONAIR-Blau */
+body #facts .facts-counter-description .fa {
+    color: #04c4f9 !important; /* ONAIR-Blau */
+    font-size: 18px !important;
+    margin-right: 8px !important;
+}
+
+/* 4. Beschreibungstexte (Edles Silber-Weiß) */
+body #facts .facts-counter-title {
+    color: #aaaaaa !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+}
+
+/* 5. Dezenter Hover-Effekt: Boxen bouncen leicht nach oben bei Berührung */
+body #facts .facts-counter-wrapper {
+    transition: transform 0.3s ease !important;
+}
+
+body #facts .facts-counter-wrapper:hover {
+    transform: translateY(-5px) !important;
+}
+/* Der "ONAIR"-Glow Effekt für deine Panels */
+.creative-box {
+    padding: 30px;
+    background: rgba(10, 10, 12, 0.8);
+    border: 1px solid #1a1a1a;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}
+
+.creative-box:hover {
+    border-color: #00f2ff; /* Dein ONAIR-Blau */
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.creative-box h4 {
+    color: #fff;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.creative-box p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+/* Button Trigger Style */
+.btn-onair-trigger {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid #00f2ff;
+    color: #00f2ff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-onair-trigger:hover {
+    background: #00f2ff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
+}
+/* Media Creative Panel - Clean & Centered */
+.creative-box {
+    text-align: center; /* Text alles zentriert */
+    padding: 30px;
+    background: rgba(10, 10, 12, 0.8);
+    border: 1px solid #1a1a1a;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effekt: Alles wird Cyan */
+.creative-box:hover {
+    border-color: #00f2ff;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+.creative-box:hover h4, 
+.creative-box:hover p {
+    color: #00f2ff !important; /* Der Text wird beim Hover Cyan */
+}
+
+/* Basis-Text-Style */
+.creative-box h4 {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.creative-box p {
+    color: #888888;
+    transition: color 0.3s ease;
+}
+/* Styling für die Assets in den Services */
+.services-asset {
+    max-width: 120px; /* Perfekte Größe für die Boxen */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Leicht abgerundet sieht moderner aus */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Zentriert das Bild */
+    transition: transform 0.3s ease; /* Ein dezenter Effekt beim Laden */
+}
+
+/* Hover-Effekt: Wenn man über die Box fährt, wird das Bild minimal größer */
+.services-hover:hover .services-asset {
+    transform: scale(1.05);
+}
+/* Erzwingt Farbe für die SVG-Links, damit sie immer leuchten */
+.x-link, .tiktok-link {
+    color: #00f2ff !important; /* Hier wird das Cyan für currentColor definiert */
+}
+
+/* Sicherstellen, dass die SVG-Größe korrekt übernommen wird */
+.x-link svg, .tiktok-link svg {
+    display: block;
+    width: 20px; /* Ein Tick größer für die mobile Sichtbarkeit */
+    height: 20px;
+}
+/* Einheitliches Design für alle Links in der Leiste */
+.social-svg-link {
+    display: inline-block;
+    transition: all 0.3s ease; /* Weicher Übergang */
+    color: #00f2ff; /* Dein Cyan-Standard */
+}
+
+/* Hover-Effekt für ALLE (Glow + Move up) */
+.social-svg-link:hover {
+    transform: translateY(-5px); /* Bewege dich nach oben */
+    filter: drop-shadow(0 0 8px #00f2ff); /* Glüheffekt */
+    color: #fff; /* Vielleicht weiß beim Hovern für Kontrast? */
+}
+/* Globale Definition für alle Social Links */
+.social-svg-link, 
+.x-link, 
+.tiktok-link {
+    color: #00ffff; /* Das Terminal-Cyan */
+    transition: all 0.3s ease; /* Weicher Übergang */
+}
+
+/* Hover-Effekt mit Glow */
+.social-svg-link:hover, 
+.x-link:hover, 
+.tiktok-link:hover {
+    color: #ffffff; /* Leuchtet weiß/hell beim Drüberfahren */
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8)); /* Der Terminal-Glow */
+    cursor: pointer;
+}
+/* 1. Standard-Zustand für ALLE Social-Icons (erzwungen) */
+ul.social-icons a,
+.x-link,
+.tiktok-link,
+.social-svg-link {
+    color: #00ffff !important; /* Dein Terminal-Cyan */
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 2. Hover-Zustand für ALLE Social-Icons (erzwungen) */
+ul.social-icons a:hover,
+.x-link:hover,
+.tiktok-link:hover,
+.social-svg-link:hover {
+    color: #ffffff !important; /* Weiß beim Hover */
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8)) !important; /* Glow */
+    cursor: pointer;
+}/* 1. Standard-Zustand für ALLE Social-Icons (erzwungen) */
+ul.social-icons a,
+.x-link,
+.tiktok-link,
+.social-svg-link {
+    color: #00ffff !important; /* Dein Terminal-Cyan */
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+/* 2. Hover-Zustand für ALLE Social-Icons (erzwungen) */
+ul.social-icons a:hover,
+.x-link:hover,
+.tiktok-link:hover,
+.social-svg-link:hover {
+    color: #ffffff !important; /* Weiß beim Hover */
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8)) !important; /* Glow */
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   GAIA OS: HIGH-PERFORMANCE MOBILE NAV-CSS (ZERO JS)
+   ========================================================================== */
+
+/* 1. Checkbox unsichtbar machen */
+.menu-checkbox {
+    display: none !important;
+}
+
+/* 2. Der feste, stylische Hamburger-Button */
+/* 2. Der feste Hamburger-Button (KOMPLETT DEAKTIVIERT) */
+.menu-button {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    z-index: -9999 !important;
+}
+
+.menu-button:hover {
+    border-color: rgba(0, 210, 255, 0.6);
+}
+
+.hamburger {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 22px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+.hamburger::before { top: -7px; }
+.hamburger::after { bottom: -7px; }
+
+
+/* 3. Das dunkle, mystische Hintergrund-Overlay */
+/* 3. Das dunkle, mystische Hintergrund-Overlay (DEAKTIVIERT) */
+.navigation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: transparent !important; /* Kein grauer/blauer Hintergrund mehr! */
+    backdrop-filter: none !important;    /* Kein Weichzeichner mehr auf dem Video! */
+    z-index: -1 !important;             /* Hinter ALLES schieben! */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;    /* Lässt jeden Klick 100% durchgehen! */
+    display: none !important;            /* Komplett vom Rendern ausschließen! */
+}
+
+
+/* 4. Das Haupt-Nav-Panel (.navigation) */
+.navigation {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Versteckt außerhalb des Bildschirms */
+    width: 320px;
+    max-width: 85%;
+    height: 100vh;
+    background: rgba(5, 5, 8, 0.99); /* Weltraum-Schwarz */
+    border-left: 1px solid rgba(0, 210, 255, 0.15);
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    transition: right 0.4s cubic-bezier(0.1, 0.9, 0.2, 1); /* Ultrasmoother Spring-Slide */
+}
+
+/* Innen-Ausrichtung des Containers */
+.center-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 80px 40px 40px 40px;
+    box-sizing: border-box;
+}
+
+.center-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Perfekter Abstand zwischen Menü und Socials */
+}
+
+
+/* 5. Deine Menü-Knotenpunkte */
+.menu.main-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    transform: translateX(30px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.1, 0.9, 0.2, 1), opacity 0.4s ease;
+}
+
+.menu-link {
+    color: #8a8a93;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.menu-link:hover {
+    color: #00d2ff; /* Leuchtet im GAIA-Blau */
+    padding-left: 10px;
+}
+
+
+/* 6. Deine Social-Icons am Menü-Ende */
+.navigation-social-icons {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s; /* Sanftes Nachziehen */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #8a8a93;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #00d2ff;
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   GAIA OS: HIGH-PERFORMANCE MOBILE NAV-CSS (ZERO JS) - MASTER KEY
+   ========================================================================== */
+
+/* 1. Checkbox unsichtbar machen */
+.menu-checkbox {
+    display: none !important;
+}
+
+/* 2. Der feste, stylische Hamburger-Button */
+.menu-button {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 10001 !important; /* Über dem Overlay und der Nav */
+    cursor: pointer !important;
+    padding: 12px !important;
+    background: rgba(5, 5, 8, 0.9) !important;
+    border: 1px solid rgba(0, 210, 255, 0.2) !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    display: block !important; /* Sicherstellen, dass der Button sichtbar ist */
+}
+
+.menu-button:hover {
+    border-color: rgba(0, 210, 255, 0.6) !important;
+}
+
+.hamburger {
+    display: block !important;
+    width: 22px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    position: relative !important;
+    transition: background 0.3s ease !important;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '' !important;
+    width: 22px !important;
+    height: 2px !important;
+    background: #ffffff !important;
+    position: absolute !important;
+    left: 0 !important;
+    transition: all 0.3s ease !important;
+}
+.hamburger::before { top: -7px !important; }
+.hamburger::after { bottom: -7px !important; }
+
+
+/* 3. Das dunkle, mystische Hintergrund-Overlay */
+.navigation-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100vh !important;
+    background: rgba(3, 3, 5, 0.85) !important;
+    backdrop-filter: blur(5px) !important;
+    z-index: 9998 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.4s ease, visibility 0.4s ease !important;
+    display: block !important;
+}
+
+
+/* 4. Das Haupt-Nav-Panel (.navigation) */
+.navigation {
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important; /* Versteckt außerhalb des Bildschirms */
+    width: 320px !important;
+    max-width: 85% !important;
+    height: 100vh !important;
+    background: rgba(5, 5, 8, 0.99) !important; /* Weltraum-Schwarz */
+    border-left: 1px solid rgba(0, 210, 255, 0.15) !important;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.95) !important;
+    z-index: 9999 !important; /* Unter dem Button, aber über dem Overlay */
+    display: block !important; /* Verhindert display: none aus dem Template */
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: right 0.4s cubic-bezier(0.1, 0.9, 0.2, 1), opacity 0.4s ease, visibility 0.4s ease !important;
+}
+
+/* Innen-Ausrichtung des Containers */
+.center-container {
+    height: 100% !important;
+    display: flex !important; /* Erzwingt Flexbox-Layout */
+    align-items: center !important;
+    padding: 80px 40px 40px 40px !important;
+    box-sizing: border-box !important;
+}
+
+.center-block {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 50px !important;
+}
+
+
+/* 5. Deine Menü-Knotenpunkte */
+.menu.main-menu {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+}
+
+.menu-item {
+    display: block !important;
+    transform: translateX(30px) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: transform 0.4s cubic-bezier(0.1, 0.9, 0.2, 1), opacity 0.4s ease, visibility 0.4s ease !important;
+}
+
+.menu-link {
+    color: #8a8a93 !important;
+    text-decoration: none !important;
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    padding: 10px 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02) !important;
+    transition: color 0.3s ease, padding-left 0.3s ease !important;
+}
+
+.menu-link:hover {
+    color: #00d2ff !important; /* Leuchtet im GAIA-Blau */
+    padding-left: 10px !important;
+}
+
+
+/* 6. Deine Social-Icons am Menü-Ende */
+.navigation-social-icons {
+    display: block !important;
+    transform: translateY(20px) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: transform 0.5s ease 0.3s, opacity 0.5s ease 0.3s, visibility 0.5s ease 0.3s !important;
+}
+
+.social-icons {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    gap: 20px !important;
+}
+
+.social-icons a {
+    color: #8a8a93 !important;
+    transition: color 0.3s ease, transform 0.3s ease !important;
+    display: inline-block !important;
+}
+
+.social-icons a:hover {
+    color: #00d2ff !important;
+    transform: translateY(-3px) !important;
+}
+
+
+/* ==========================================================================
+   CSS-SCHALTPRINZIP (DIE TRANSITIONEN BEI CHECKED)
+   ========================================================================== */
+
+/* Zeige das abgedunkelte Overlay */
+.menu-checkbox:checked ~ .navigation-overlay {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Slide das Navigations-Panel rein und mach es sichtbar */
+.menu-checkbox:checked ~ .navigation {
+    right: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Links der Reihe nach einblenden (Staggered Animations) */
+.menu-checkbox:checked ~ .navigation .menu-item {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(1) { transition-delay: 0.1s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(2) { transition-delay: 0.14s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(3) { transition-delay: 0.18s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(4) { transition-delay: 0.22s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(5) { transition-delay: 0.26s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(6) { transition-delay: 0.3s !important; }
+.menu-checkbox:checked ~ .navigation .menu-item:nth-child(7) { transition-delay: 0.34s !important; }
+
+/* Social Icons einblenden */
+.menu-checkbox:checked ~ .navigation .navigation-social-icons {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hamburger zu Schließ-X animieren */
+.menu-checkbox:checked + .menu-button .hamburger {
+    background: transparent !important;
+}
+.menu-checkbox:checked + .menu-button .hamburger::before {
+    transform: rotate(45deg) !important;
+    top: 0 !important;
+    background: #00d2ff !important;
+}
+.menu-checkbox:checked + .menu-button .hamburger::after {
+    transform: rotate(-45deg) !important;
+    bottom: 0 !important;
+    background: #00d2ff !important;
+}
+/* ==========================================================================
+   FIX FÜR DIE UNSICHTBARE SCHRIFT IM "CAST"-BEREICH
+   ========================================================================== */
+
+/* Zwinge den Text "Cast" (h2.section-title) zur Sichtbarkeit im div#cast Bereich */
+#cast .section-title {
+    opacity: 1 !important;             /* Zwinge volle Deckkraft */
+    visibility: visible !important;   /* Zwinge Sichtbarkeit */
+    color: #ffffff !important;         /* Zwinge eine sichtbare Textfarbe (Weiß, wie in image_2.png) */
+    display: block !important;         /* Zwinge, dass es als Block-Element angezeigt wird */
+    font-weight: 700 !important;       /* Optional: Zwinge Fettdruck */
+}
+
+/* Optional: Stelle sicher, dass auch der Text darunter (image_2.png) sichtbar ist */
+#cast p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    color: #a0a0a5 !important;         /* Zwinge eine graue Textfarbe für den Beschreibungstext */
+    display: block !important;
+}
+
+
+/* ==========================================================================
+   FIX FÜR DAS DESKTOP-HAMBURGER-MENÜ (SOLLTE NUR MOBIL SEIN)
+   ========================================================================== */
+
+/* Zwinge das Hamburger-Menü-Icon auf Desktop-Geräten aus (über 1024px Breite) */
+@media (min-width: 1024px) {
+    /* WICHTIG: Ersetze '.navigation-toggle' mit der tatsächlichen Klasse deines Hamburger-Icons.
+       Basierend auf deinen Screenshots ist es wahrscheinlich '.navigation-toggle mobile-only'
+       oder eine ähnliche Klasse, die für das mobile Menü zuständig ist.
+       Teste diesen Code. Wenn es nicht funktioniert, passe die Klasse an. */
+    .navigation-toggle.mobile-only {
+        display: none !important;
+    }
+}
+/* ==========================================
+   CSS FIX FÜR DIE ÜBERSCHRIFT "CAST"
+   ========================================== */
+
+/* Mobile-Ansicht (Standard): Wirkt wie eine kompakte H3 */
+#cast .section-title {
+    font-size: 2rem !important; /* Schrumpft es auf dem Handy gesund zusammen */
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 15px;
+}
+
+/* Desktop-Ansicht ab 1024px: Wirkt wie eine fette H1 */
+@media (min-width: 1024px) {
+    #cast .section-title {
+        font-size: 4.5rem !important; /* Der brachiale Desktop-Look */
+        line-height: 1.0;
+        letter-spacing: -0.04em;
+        margin-bottom: 25px;
+    }
+}
+/* ==========================================
+   BURGER-MENÜ AUF DESKTOP VERBANNEN
+   ========================================== */
+
+/* Ab einer Breite von 1024px (Desktop-Ansicht) */
+@media (min-width: 1024px) {
+    /* Blendet das Burger-Icon komplett aus */
+    .navbar-toggler,
+    .menu-toggle,
+    .burger-menu,
+    .mobile-menu-toggle,
+    .hamburger-icon {
+        display: none !important;
+    }
+}
+/* ==========================================
+   BURGER-MENÜ (.hamburger) AUF DESKTOP AUSBLENDEN
+   ========================================== */
+
+/* Ab einer Breite von 1024px (Desktop-Ansicht) */
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none !important;
+    }
+}
+/* Styling für die technischen Audio-Spezifikationen */
+.track-specs {
+    display: flex;
+    gap: 8px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.spec-badge {
+    font-family: 'Courier New', Courier, monospace; /* Coder-Vibe */
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #00e5ff; /* Dein elektrisierendes Cyan-Blau */
+    background: rgba(0, 229, 255, 0.05);
+    border: 1px solid rgba(0, 229, 255, 0.2);
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.05);
+}
+
+.spec-badge.status-active {
+    color: #39ff14; /* Neon-Grün für "LIVE ON AIR" */
+    background: rgba(57, 255, 20, 0.05);
+    border-color: rgba(57, 255, 20, 0.2);
+}
+
+.track-description {
+    font-size: 0.9rem;
+    color: #8a99ad;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+/* --- TRACK-TITEL STYLE --- */
+.track-title {
+    color: #ffffff !important; /* Das kranke Neon-Cyan, passend zur DISCOGRAPHY-Schrift */
+    font-size: 1.6rem;
+    font-weight: 800; /* Schön fett und dominant */
+    text-transform: uppercase; /* Schreibt alles in Großbuchstaben für den Plakat-Look */
+    letter-spacing: 0.03em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- OPTIONALER HOVER-EFFEKT (Macht es auf dem Desktop unnormal edel) --- */
+.discography-item:hover .track-title {
+    color: #ffffff !important; /* Wird weiß, wenn man mit der Maus drübergeht */
+    text-shadow: 0 0 12px rgba(0, 240, 255, 0.8); /* Erzeugt einen geilen Cyan-Glow-Effekt */
+    transform: translateX(3px); /* Bewegt den Titel minimal nach rechts */
+}
+/* --- TRACK COVER CONTAINER --- */
+.track-cover-container {
+    position: relative;
+    width: 100%;
+    max-width: 260px; /* Perfekte Größe, damit es auf Desktop & Mobile edel aussieht */
+    aspect-ratio: 1 / 1;
+    margin: 15px 0 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hover-Effekt: Cyan-Glow und leichtes Vergrößern */
+.track-cover-container:hover {
+    border-color: #00f0ff !important;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+    transform: scale(1.03);
+}
+
+.track-cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+/* Cover abdunkeln bei Hover */
+.track-cover-container:hover .track-cover-img {
+    filter: brightness(0.3) blur(1px);
+}
+
+/* Play-Overlay auf dem Cover */
+.cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.track-cover-container:hover .cover-overlay {
+    opacity: 1;
+}
+
+.overlay-play-icon {
+    font-size: 2.5rem;
+    color: #00f0ff;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.track-cover-container:hover .overlay-play-icon {
+    transform: scale(1);
+}
+
+/* Mini-Cover für den schwebenden Web3 Player */
+.player-mini-cover {
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+    display: none; /* Wird erst eingeblendet, wenn Musik läuft */
+}
+/* --- SYMMETRISCHES DISCOGRAPHY GRID --- */
+.equal-height-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discography-card-wrapper {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.discography-item {
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Verteilt Inhalt, Cover und Badges perfekt */
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Edler Hover-Effekt für die gesamte Karte */
+.discography-item:hover {
+    background: rgba(0, 240, 255, 0.01) !important;
+    border-color: rgba(0, 240, 255, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.05);
+    transform: translateY(-4px);
+}
+
+/* Sicherstellen, dass das Cover immer perfekt zentriert in der Karte sitzt */
+.track-cover-container {
+    margin: 15px auto 20px auto !important;
+}
+
+/* Abstandshalter für die Badges */
+.track-specs {
+    margin-top: auto; /* Schiebt die Specs und Beschreibung immer nach ganz unten */
+    margin-bottom: 15px;
+}
+/* --- WEB3 FLOATING PLAYER --- */
+.web3-player {
+    position: fixed;
+    bottom: -180px; /* Weiter unten versteckt, damit der Schatten nicht reinschaut */
+    left: 5%;       /* Gibt links 5% Platz */
+    right: 5%;      /* Gibt rechts 5% Platz */
+    width: 90%;     /* Schwebt als Widget im Screen */
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(5, 5, 5, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0, 240, 255, 0.25); /* Rundum-Rahmen für die Box */
+    box-shadow: 0 10px 40px rgba(0, 240, 255, 0.15);
+    border-radius: 16px; /* Edle, abgerundete Ecken */
+    padding: 15px 20px;
+    z-index: 9999;
+    transition: bottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* Wird getriggert, sobald ein Track aktiv ist */
+.web3-player.active {
+    bottom: 20px; /* Schwebt elegant über dem Rand */
+}
+.player-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Pulsierender grüner Signal-Punkt */
+.web3-pulse-node {
+    width: 10px;
+    height: 10px;
+    background: #00ff66;
+    border-radius: 50%;
+    margin-right: 15px;
+    box-shadow: 0 0 10px #00ff66;
+    animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(0.9); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 15px #00ff66; }
+    100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.player-track-info {
+    display: flex;
+    align-items: center;
+}
+
+.player-status {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+#player-current-title {
+    color: #00f0ff;
+    font-weight: 800;
+    margin: 3px 0 0 0;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+/* Mini-Cover im Player */
+.player-mini-cover {
+    width: 45px;
+    height: 45px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+    display: none;
+}
+
+/* Player Controls */
+.player-controls {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.player-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+.player-btn:hover { transform: scale(1.1); }
+
+/* Progress Bar */
+.player-progress-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+}
+
+.progress-bar-bg {
+    flex-grow: 1;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #00f0ff;
+    box-shadow: 0 0 8px #00f0ff;
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+/* Equalizer Visualizer */
+.web3-equalizer {
+    display: flex;
+    align-items: flex-end;
+    height: 25px;
+}
+
+.eq-bar {
+    width: 3px;
+    height: 5px;
+    background: #00f0ff;
+    margin-left: 3px;
+    border-radius: 1px;
+}
+
+/* Equalizer tanzt nur, wenn die Klasse .playing aktiv ist */
+.web3-player.playing .eq-bar {
+    animation: eqBounce 1.2s ease infinite alternate;
+}
+.web3-player.playing .eq-bar:nth-child(2) { animation-delay: 0.2s; }
+.web3-player.playing .eq-bar:nth-child(3) { animation-delay: 0.4s; }
+.web3-player.playing .eq-bar:nth-child(4) { animation-delay: 0.1s; }
+.web3-player.playing .eq-bar:nth-child(5) { animation-delay: 0.3s; }
+
+@keyframes eqBounce {
+    0% { height: 5px; }
+    100% { height: 25px; box-shadow: 0 0 10px #00f0ff; }
+}
+
+/* Mobile Responsive Anpassungen */
+@media (max-width: 768px) {
+    .player-container { flex-direction: column; gap: 10px; text-align: center; }
+    .player-controls { margin: 5px 0; width: 100%; }
+    .web3-equalizer { display: none; }
+}
+.web3-player {
+    position: fixed;
+    bottom: -150px; /* Leicht erhöht für sichereren Übergang auf Mobile */
+    left: 0;
+    width: 100%;
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(0, 240, 255, 0.25);
+    box-shadow: 0 -10px 30px rgba(0, 240, 255, 0.1);
+    
+    /* PADDING-UPGRADE FÜR MOBILE SAFE AREAS (iPhones) */
+    padding-top: 15px;
+    padding-bottom: calc(15px + env(safe-area-inset-bottom));
+    
+    z-index: 9999;
+    transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.web3-player.active {
+    bottom: 0;
+}
+/* --- SPEZIELLES UPGRADE FÜR MOBILE (SMARTPHONES) --- */
+@media (max-width: 768px) {
+    .web3-player {
+        width: 92%;
+        left: 4%;
+        right: 4%;
+        padding: 12px 15px;
+    }
+    
+    .web3-player.active {
+        /* Perfekter Abstand auf Handys, weit weg von der iOS-Leiste oder Android-Bedienung! */
+        bottom: calc(15px + env(safe-area-inset-bottom)); 
+    }
+    
+    .player-mini-cover {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    
+    #player-current-title {
+        font-size: 0.9rem;
+    }
+}
+/* --- PLAYER CLOSE BUTTON (X) --- */
+.player-close-x {
+    position: absolute;
+    top: 5px; /* Ganz oben rechts */
+    right: 12px;
+    background: none;
+    border: none;
+    color: rgba(0, 240, 255, 0.4); /* Dezentes Cyan, wird bei Hover hell */
+    font-size: 24px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 10001; /* Über allem anderen im Player */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.player-close-x:hover {
+    color: #ffffff; /* Leuchtend weiß bei Hover */
+    transform: scale(1.1) rotate(90deg); /* Dreht sich leicht */
+}
+
+/* Optimierung für Mobile */
+@media (max-width: 768px) {
+    .player-close-x {
+        font-size: 28px; /* Größer für Touch-Bedienung */
+        top: 2px;
+        right: 8px;
+    }
+}
+@media (max-width: 768px) {
+    .gaia-hero {
+        /* VERHINDERT, DASS DER HERO ZUSAMMENBRICHT */
+        /* Mindestens die Höhe des Bildschirms, damit der Text */
+        /* und der Switch physisch drinnen bleiben! */
+        min-height: 90vh !important;
+        padding-top: calc(80px + env(safe-area-inset-top)) !important; /* Genug Platz zum Nav-Bar */
+        padding-bottom: calc(40px + env(safe-area-inset-bottom)) !important;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Zentriert den Inhalt vertikal */
+    }
+    
+    /* Der Text muss vielleicht etwas kleiner werden, damit alles reinpasst */
+    .hero-pretitle {
+        font-size: 1rem !important;
+    }
+    
+    .hero-main-title {
+        font-size: 2.2rem !important;
+        margin: 15px 0 !important;
+    }
+    
+    /* Stell sicher, dass der Switch-Container keine riesigen Margins hat */
+    .music-on-off-container {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        display: flex;
+        justify-content: center; /* Zentriert den Switch */
+        width: 100%;
+    }
+}
+.sound-control {
+    background: rgba(255, 255, 255, 0.05); /* Dezenter Glanz */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /* Web3-Vibe */
+}
+
+.sound-control:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+}
+
+.sound-svg {
+    stroke: white;
+}
+/* Finales Produktions-Design für den Floating Player */
+#web3-player-dock {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    
+    /* Mobile-First: Der Player nimmt 95% der Bildschirmbreite ein */
+    width: 95% !important; 
+    
+    /* Desktop-Größe: Erst ab 768px Breite darf er so breit werden */
+    max-width: 1140px !important; 
+    
+    z-index: 999999 !important;
+    display: none; 
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid #00f0ff !important;
+    padding: 15px !important; /* Etwas weniger Padding für mobile */
+    border-radius: 8px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#web3-player-dock.active {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+/* 1. Container ausrichten */
+.equalizer-bar {
+    display: flex;
+    align-items: flex-end; /* Wichtig: Balken kleben am Boden */
+    gap: 3px;
+    height: 20px;
+    margin-left: 10px; /* Bisschen Abstand zum Rest */
+}
+
+/* 2. Die Balken selbst */
+.bar {
+    width: 3px;
+    height: 5px;
+    background-color: #00f0ff; /* Dein Cyan */
+    border-radius: 2px;
+}
+/* 1. Die Animationen - wir machen sie etwas abwechslungsreicher */
+@keyframes jump {
+    0%, 100% { height: 5px; }
+    50% { height: 25px; } /* Etwas höher für mehr Dynamik */
+}
+
+/* 2. Allgemeine Basis */
+.bar {
+    width: 4px;
+    background-color: #00f0ff;
+    border-radius: 2px;
+    /* Animation global definieren, aber individuell steuern */
+    animation: jump infinite ease-in-out;
+}
+
+/* 3. Der Tuner: Jeder Balken kriegt jetzt eine eigene Zeit und Delay */
+/* Dadurch überlagern sich die Bewegungen und es wirkt wie ein echter Frequenz-Analysator */
+
+.bar-1 { animation-duration: 0.6s; animation-delay: 0.1s; }
+.bar-2 { animation-duration: 0.8s; animation-delay: 0.2s; }
+.bar-3 { animation-duration: 0.5s; animation-delay: 0.0s; }
+.bar-4 { animation-duration: 0.7s; animation-delay: 0.3s; }
+.bar-5 { animation-duration: 0.9s; animation-delay: 0.1s; }
+
+/* Trigger: Nur wenn der Player spielt */
+#web3-player-dock.playing .bar {
+    /* Die Animation wird hier erst aktiv, wenn die Klasse .playing gesetzt ist */
+}
+.hero-cta-container {
+    margin-top: 30px; /* Gibt dem Button Luft nach oben */
+    display: flex;
+    justify-content: center;
+}
+
+/* --- GAIA DESIGN SYSTEM: BUTTONS --- */
+
+
+/* PRIMARY: CYAN (Hero & Wallet Connect) */
+.cta-primary {
+    border-color: #00f0ff;
+    color: #00f0ff;
+    background: rgba(0, 240, 255, 0.05);
+}
+
+.cta-primary:hover {
+    background: #00f0ff;
+    color: #000;
+    box-shadow: 0 0 25px #00f0ff;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY: MAGENTA (Discord) */
+.cta-secondary {
+    border-color: #ff00ff;
+    color: #ff00ff;
+    background: rgba(255, 0, 255, 0.05);
+}
+
+.cta-secondary:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 25px #ff00ff;
+    transform: translateY(-2px);
+}
+
+/* Mobile-Anpassung: Wenn der Screen schmaler als 768px ist */
+@media (max-width: 768px) {
+    /* Das Div mit den 450px Höhe */
+    /* Da du dort keine ID hast, sprechen wir das Div direkt an, 
+       das vor dem container-fluid kommt */
+    .container-fluid:has(#map-wrapper) ~ div[style*="height: 450px"],
+    div[style*="height: 450px"] {
+        height: 200px !important; 
+    }
+
+    /* Das eigentliche Map-Div mit den 600px Höhe */
+    #map {
+        height: 300px !important; 
+    }
+}
+/* Der "Atom-Hammer": Ignoriert Inline-Styles und killt die leeren Blöcke */
+div[style*="height: 450px"], 
+div[style*="height: 600px"] {
+    height: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+/* Debug-Modus für die Map */
+#map {
+    border: 5px solid #ff00ff !important; /* Neon-Magenta Rahmen */
+    background-color: rgba(255, 0, 255, 0.3) !important; /* Halbtransparentes Pink */
+    z-index: 999999 !important; /* Zwingt sie ganz nach vorne */
+    display: block !important;
+    visibility: visible !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+#cta {
+    padding: 80px 20px;
+    background: rgba(0, 0, 0, 0.95);
+    border-top: 1px solid #00f0ff;
+}
+
+.cta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50/50 Split */
+    gap: 30px; /* Abstand etwas verringern, damit es enger zusammenrückt */
+    max-width: 800px; /* Box wird schmaler, wirkt kompakter */
+    margin: 0 auto;
+    align-items: center; /* Zwingt Schrift und Buttons auf die gleiche horizontale Linie */
+    padding: 0 20px;
+}
+
+/* Glitch Box Styling - Rand jetzt auf Schwarz */
+.glitch-box {
+    border: 1px solid #000; /* Hier auf Schwarz geändert */
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(0, 240, 255, 0.05); /* Der leichte Cyan-Schimmer im Hintergrund bleibt */
+}
+/* Der Cursor-Effekt für das Terminal-Feeling */
+.terminal-cursor::after {
+    content: '_';
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+/* Die Buttons rechts stramm ziehen */
+.cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Etwas weniger Abstand zwischen den Buttons */
+    width: 100%;
+}
+
+/* Responsive: Wenn es auf dem Handy klemmt */
+@media (max-width: 768px) {
+    .cta-grid {
+        grid-template-columns: 1fr; /* Untereinander stapeln */
+        gap: 20px;
+    }
+}
+.secondary {
+    border: 1px solid #ff00ff !important; /* Lila/Pinker Akzent für Community */
+    color: #ff00ff !important;
+}
+
+.secondary:hover {
+    background: #ff00ff !important;
+    color: #000 !important;
+}
+
+/* Mobile Optimierung */
+@media (max-width: 768px) {
+    .cta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#cta, .cta-wrapper {
+    text-align: center; /* Das zwingt alle Elemente (auch die H2) in die Mitte */
+}
+/* Geister-Striche im Command Center killen */
+#cta .section-title::before,
+#cta .section-title::after {
+    display: none !important; /* Hier löschen wir die Linien komplett */
+    content: none !important;
+}
+
+/* Falls dein Theme die Linie direkt auf dem Element hat (border-bottom) */
+#cta .section-title {
+    border-bottom: none !important;
+}
+
+#terminal-output {
+    transition: opacity 0.3s ease;
+    min-height: 1.2em; /* Verhindert Springen der Box */
+    color: #00f0ff;
+    font-family: 'Courier New', monospace;
+}
+/* --- LEGACY BUTTON DESIGN: CLEAN & PULSATING --- */
+
+/* Der Pulsier-Effekt (Orangener Glow) */
+@keyframes pulse-orange {
+    0% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 87, 34, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0); }
+}
+
+/* Hover-Zustand: Wechsel auf Orange + Puls */
+.cta-button:hover {
+    background: #ff4500; /* Tiefes Orange */
+    color: #fff;
+    animation: pulse-orange 1.5s infinite; /* Pulsieren startet */
+}
+
+/* Die Bounce-Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-8px);}
+    60% {transform: translateY(-4px);}
+}
+/* --- GAIA CLEANUP: OVERLAYS DEAKTIVIEREN --- */
+
+/* 1. Das schwarze Vollflächen-Overlay killen */
+.home-page-overlay {
+    background-color: transparent !important;
+}
+
+/* 2. Das Gradient-Overlay killen */
+.home-page-overlay-gradient {
+    background: none !important;
+    filter: none !important; /* Wichtig für IE-Kompatibilität */
+    display: none; /* Macht es komplett unsichtbar */
+}
+
+/* --- BUTTON 1: BLAU/CYAN GRADIENT --- */
+.cta-link1 {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+}
+
+.cta-link1:hover {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* --- BUTTON 2: GRÜN GRADIENT --- */
+.cta-link2 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.cta-link2:hover {
+    box-shadow: 0 0 20px rgba(56, 239, 125, 0.6);
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* --- BUTTON DEFINITION: JETZT MIT KONTRAST --- */
+
+
+/* Hover-Zustand: Button wird Orange, Text wird Weiß */
+.cta-button:hover {
+    background: #ff4500;     /* Orange beim Hover */
+    color: #fff;             /* WEISSER TEXT BEIM HOVER (für Kontrast auf Orange) */
+    animation: pulse-orange 1.5s infinite;
+}
+/* --- 1. BASIS: WAS ALLE BUTTONS TEILEN --- */
+/* --- 1. BASIS-BUTTON (Alle teilen sich das Grundgerüst) --- */
+.cta-button {
+    display: inline-block;
+    padding: 18px 45px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-align: center;
+    border: none;
+    font-weight: 800;
+    position: relative;
+    z-index: 999;
+}
+
+/* --- 2. HERO BUTTON: ERZWUNGENES WEISS & ANIMATION --- */
+.cta-hero {
+    background: #fff !important; /* !important überschreibt Glass-Effekte */
+    color: #000 !important;      /* Text schwarz */
+    border-radius: 50px;
+    animation: bounce 2s infinite;
+}
+
+.cta-hero:hover {
+    background: #ff4500 !important; /* Orange beim Hover */
+    color: #fff !important;
+    animation: pulse-orange 1.5s infinite;
+}
+
+/* --- 3. COMMAND CENTER: FESTE BREITE (Gleich groß) --- */
+.cta-link1, .cta-link2 {
+    width: 300px; /* Hier kannst du die Breite für BEIDE gleich einstellen */
+    border-radius: 5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    color: #fff !important;
+}
+
+.cta-link1 {
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+}
+
+.cta-link2 {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.cta-link1:hover, .cta-link2:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
+/* --- ANIMATIONEN (Bleiben gleich) --- */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-8px);}
+    60% {transform: translateY(-4px);}
+}
+
+@keyframes pulse-orange {
+    0% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 87, 34, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 87, 34, 0); }
+}
+/* --- GAIA: OVERLAYS VERBANNEN (KILLER-CSS) --- */
+.home-page-overlay,
+.home-page-overlay.light,
+.home-page-overlay-gradient {
+    background: none !important;
+    background-color: transparent !important;
+    display: none !important; /* Hier löschen wir die Schleier physisch aus dem Layout */
+    visibility: hidden;
+    pointer-events: none;
+}
+/* --- HERO BUTTON SPEZIAL-BOOST --- */
+.cta-hero {
+    background: #fff !important; /* Erzwingt Weiß, egal was kommt */
+    color: #000 !important;      /* Erzwingt schwarzen Text */
+    border: none !important;     /* Kein Glass-Border */
+    opacity: 1 !important;       /* Volle Deckkraft */
+}
+/* 1. Den Container über alles schieben */
+.hero-cta-container {
+    position: relative !important;
+    z-index: 9999 !important; /* Absolut oberste Ebene */
+    pointer-events: auto !important; /* Erlaubt Klicks innerhalb des Containers */
+}
+
+/* 2. Den Button explizit "klickbar" machen */
+.cta-button {
+    position: relative !important;
+    z-index: 10000 !important; /* Noch eine Ebene höher als der Container */
+    pointer-events: auto !important; /* Wichtig: Überschreibt blockierende Elemente */
+    cursor: pointer !important;
+}
+.spacer {
+  display: flex; /* oder display: grid */
+  gap: 30px; /* Erzeugt 20px Abstand zwischen allen Elementen */
+}
+/* Terminal Ästhetik für GML */
+.onair-signal-section {
+    background: #050505; /* Deep Black */
+    color: #00ff41; /* Cyber-Green oder nimm dein GAIA-Neon */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced für Terminal-Vibe */
+}
+
+.onair-signal-section input, 
+.onair-signal-section textarea {
+    background: #111;
+    border: 1px solid #333;
+    color: #00ff41;
+    border-radius: 0; /* Eckig, nicht rund, wirkt technischer */
+}
+
+.submit-button {
+    background: transparent;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: #00ff41;
+    color: #000;
+    cursor: pointer;
+}
+.btn-onair-trigger:hover {
+    background: #ffce00 !important;
+    color: #000 !important;
+    cursor: pointer;
+}
+/* Nur für den Bereich mit der ID discography */
+#discography {
+    font-size: 1.2rem; /* Hier wird alles größer */
+}
+
+/* Tabellen-Inhalt explizit anpassen */
+#discography table {
+    font-size: 1.1rem; 
+}
+
+/* Button-Text innerhalb der Discography */
+#discography .btn-onair-trigger {
+    font-size: 1rem !important;
+    padding: 15px 20px !important;
+}
+
+/* Überschriften im Block anpassen */
+#discography h3, #discography h4 {
+    font-size: 1.5rem;
+}
+/* ==========================================
+   GAIA NAVIGATION - CENTERED BOX LAYOUT
+   ========================================== */
+
+/* 1. Haupt-Navigation Container */
+.main-navigation {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Höhe passt sich dem Inhalt an */
+    background: transparent !important; /* Kein Standard-Hintergrund */
+    z-index: 1015;
+    display: flex;
+    justify-content: center; /* Horizontale Zentrierung */
+    align-items: center;
+    padding: 20px 0; /* Abstand oben/unten zum Seitenrand */
+}
+
+/* 2. Die zentrierte Menü-Box (Hintergrund, Border, Glow) */
+.main-inner-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.9); /* Dunkler, leicht transparenter Hintergrund */
+    border: 1px solid #00f0ff; /* Neon-Cyan Border */
+    border-radius: 4px; /* Leicht abgerundete Ecken */
+    padding: 10px 40px; /* Padding innerhalb der Box (links/rechts breiter) */
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3); /* Sanfter Cyan-Glow */
+    transition: all 0.3s ease;
+}
+
+/* 3. Die Menüliste (ul) innerhalb der Box */
+.main-inner-navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Abstand zwischen den Menüpunkten */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 4. Menü-Links (Styling) */
+.main-inner-navigation ul li a {
+    color: #fff;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* 5. Menü-Links (Hover & Active Glow) */
+.main-inner-navigation ul li a:hover,
+.main-inner-navigation ul li a.active {
+    color: #00f0ff; /* Cyan bei Hover/Aktiv */
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.8); /* Text-Glow */
+}
+/* FORCE NAVIGATION TO STAY VISIBLE ALWAYS */
+.main-navigation,
+.main-inner-navigation,
+.fix-sticky {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important; /* Verhindert, dass ein Script das Menü nach oben aus dem Bild schiebt! */
+}
+/* ==========================================
+   GAIA NAVIGATION - CLEAN CENTERED FIX
+   ========================================== */
+
+/* 1. Haupt-Navigation Container */
+.main-navigation {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75px !important;
+    background-color: rgba(17, 17, 17, 0.95);
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between; /* Verteilt Logo links & Menü Mitte */
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+/* 2. Logo links positionieren */
+.main-navigation-logo {
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+}
+
+.main-navigation-logo img {
+    max-height: 45px;
+    width: auto;
+    display: block;
+}
+
+/* 3. Menü-Container zentrieren (Innere Box) */
+.main-inner-navigation {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Zwingt die Box exakt in die Mitte */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 240, 255, 0.4);
+    border-radius: 6px;
+    padding: 8px 25px;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+}
+
+/* 4. Menü-Liste (ul) */
+.main-inner-navigation ul {
+    display: flex !important;
+    align-items: center;
+    gap: 20px; /* Gleichmäßiger Abstand zwischen Menüpunkten */
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.main-inner-navigation ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* 5. Menü-Links Styling & Glow */
+.main-inner-navigation ul li a {
+    color: #fff !important;
+    font-family: monospace !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.main-inner-navigation ul li a:hover,
+.main-inner-navigation ul li a.active {
+    color: #00f0ff !important;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.8) !important;
+}
+.gaia-grid-card:hover {
+    border-color: #00f0ff !important;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.4) !important;
+    background: rgba(0, 240, 255, 0.05) !important;
+}
+
+/* Responsiv für Tablets/Handys (2er oder 1er Grid auf kleinen Screens) */
+@media (max-width: 991px) {
+    .gaia-video-grid-4 .col-12 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 576px) {
+    .gaia-video-grid-4 .col-12 {
+        grid-template-columns: 1fr !important;
+    }
+}
+.gaia-track-row:hover {
+    background: rgba(0, 240, 255, 0.08) !important;
+}
+
+.gaia-track-row:hover button {
+    background: #00f0ff !important;
+    color: #000 !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
+}
+.gaia-track-row:hover {
+    background: rgba(0, 240, 255, 0.08) !important;
+}
+
+.gaia-track-row:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.gaia-track-row:hover button {
+    background: #00f0ff !important;
+    color: #000 !important;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.8);
+}
+/* GLOBAL PROTECTION: DRAG & DROP & CONTEXT MENU LOCK */
+video {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Deaktiviert die Download-Schaltfläche auf Chromium-Browsern */
+video::-internal-media-controls-download-button {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow: hidden !important;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px) !important; /* Versteckt den 3-Punkte-Menübutton am Rand */
+}
+details summary:hover {
+    color: #00f0ff !important;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.7);
+}
+/* ========================================== */
+/* GAIA FORMULAR WHITE BORDERS & HOVER FIX    */
+/* ========================================== */
+
+/* 1. Standards für Inputs und Textarea */
+.gaia-input {
+    border: 1px solid #ffffff !important;
+    color: #78fc83 !important;
+    background: #000000 !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 2. Hover & Focus (Klick): Reinweiß statt Cyan! */
+.gaia-input:hover,
+.gaia-input:focus {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6) !important;
+    outline: none !important;
+    color: #78fc83 !important;
+}
+
+/* 3. Placeholder Text (Dezentes Grün) */
+.gaia-input::placeholder {
+    color: rgba(120, 252, 131, 0.5) !important;
+}
+/* ========================================== */
+/* KNOWLEDGE BLOCK ORANGE HOVER (#ff6a00)     */
+/* ========================================== */
+
+.knowledge-block {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover-Effekt für die gesamte Kiste */
+.knowledge-block:hover {
+    border-color: #ff6a00 !important;
+    box-shadow: 0 0 30px rgba(255, 106, 0, 0.4) !important;
+}
+
+/* Hover-Effekt für die FAQ-Fragen in der Kiste */
+.knowledge-block details summary {
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.knowledge-block details summary:hover {
+    color: #ff6a00 !important;
+    text-shadow: 0 0 12px rgba(255, 106, 0, 0.8) !important;
+}
+/* WAVE Titel Sichtbarkeit Fix */
+.section-wave .section-title,
+#wave-title {
+  color: #ffffff !important;
+  text-shadow: 0 0 12px rgba(0, 243, 255, 0.4); /* Subtiler Cyan Glow */
+}
+/* Signal Formular Text-Farben */
+.signal-section input::placeholder,
+.signal-section textarea::placeholder {
+  color: rgba(0, 243, 255, 0.75) !important;
+  font-size: 0.9em;
+}
+
+.signal-section .form-description,
+.signal-section .help-text {
+  color: #00f3ff;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+/* Styling für Social Icons */
+.social-links-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #00f3ff;
+  transform: translateY(-2px);
+}
+/* ============================================================
+   📱 GAIA MOBILE RESPONSIVE FIXES (max-width: 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* --- 1. GLOBAL OVERFLOW PREVENTER --- */
+  html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden !important; /* Verhindert das seitliche Wegrutschen der Seite */
+  }
+
+  /* --- 2. HEADER & DESKTOP NAVI FIX --- */
+  /* Desktop Navigation & Header Socials auf Mobile EISSKALT ausblenden */
+  .desktop-nav, 
+  .header-socials {
+    display: none !important;
+  }
+
+  /* Header Flexbox & Z-Index aufräumen */
+  .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Logo verkleinern & klickbar machen */
+  .brand-logo {
+    position: relative;
+    z-index: 10001;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  /* Mobile Menü Button erzwingen */
+  .mobile-menu-btn {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 10001;
+    background: transparent;
+    border: 1px solid #00f0ff;
+    color: #00f0ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* --- 3. MUSIC PLAYER & DOCK OVERFLOW FIX --- */
+  /* Dock auf Mobile kompakt anpassen */
+  #web3-player-dock, 
+  .web3-player-dock {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 10px 15px !important;
+    box-sizing: border-box !important;
+  }
+
+  .dock-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Cover auf Mobile etwas verkleinern */
+  .dock-cover {
+    width: 35px !important;
+    height: 35px !important;
+  }
+
+  /* --- 4. TRACKLIST / PLAYLIST TABELLEN RESPONSIVE --- */
+  /* Sorgt dafür, dass breite Tabellen auf Mobile horizontal scrollbar sind anstatt das Layout zu sprengen */
+  .tracklist-container,
+  .table-responsive {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: border-box;
+  }
+
+  /* Unnötige Spalten auf Mobil ausblenden (z.B. Genre) für mehr Platz */
+  .gaia-track-row td:nth-child(4), 
+  .showcase-table th:nth-child(4) {
+    display: none;
+  }
+
+  /* --- 5. PLAY BUTTON FIX --- */
+  /* Play Buttons auf Handys handlich skalieren */
+  .play-trigger,
+  .dock-play-btn,
+  .gaia-track-row button {
+    font-size: 0.75rem !important;
+    padding: 6px 10px !important;
+    max-width: 100%;
+    white-space: nowrap;
+  }
+}
+/* ==========================================
+   RECORDINGS MOBILE OPTIMIZATION (@media)
+   ========================================== */
+
+/* Basis-Anpassung für die Tabelle */
+#discography table {
+    width: 100%;
+    table-layout: fixed; /* Zwingt die Tabelle, sich an 100% Breite zu halten */
+}
+
+/* Standard Breiten für Spalten */
+#discography th:nth-child(1), #discography td:nth-child(1) { width: 10%; } /* # */
+#discography th:nth-child(2), #discography td:nth-child(2) { width: 55%; word-break: break-word; } /* TRACK_ID */
+#discography th:nth-child(3), #discography td:nth-child(3) { width: 18%; } /* BPM / TYPE */
+#discography th:nth-child(4), #discography td:nth-child(4) { width: 17%; text-align: center; } /* EXECUTE */
+
+/* Mobile Breakpoint (Smartphones) */
+@media (max-width: 768px) {
+    /* Container-Paddings verringern */
+    #discography .row {
+        padding: 12px !important;
+        margin-top: 25px !important;
+    }
+
+    /* Abstand unter dem Cover/Info-Block */
+    #discography .col-md-4 {
+        margin-bottom: 25px;
+    }
+
+    /* Tabelle mobil extrem kompakt machen */
+    #discography th, 
+    #discography td {
+        padding: 6px 4px !important; /* Inlines-Styles mobil überschreiben */
+        font-size: 0.75rem !important;
+    }
+
+    /* Spaltenbreiten mobil optimieren */
+    #discography th:nth-child(1), #discography td:nth-child(1) { width: 12%; }
+    #discography th:nth-child(2), #discography td:nth-child(2) { width: 52%; }
+    #discography th:nth-child(3), #discography td:nth-child(3) { width: 18%; font-size: 0.7rem !important; }
+    #discography th:nth-child(4), #discography td:nth-child(4) { width: 18%; }
+
+    /* Play Button mobil anpassen */
+    #discography .play-trigger {
+        padding: 4px 6px !important;
+        font-size: 0.75rem !important;
+        display: inline-block;
+        width: 100%;
+        max-width: 32px;
+    }
+}
+/* ==========================================
+   WEB3 PLAYER DOCK MOBILE FIX
+   ========================================== */
+
+/* Zwingt den Player immer in den Vordergrund */
+#web3-player-dock {
+    z-index: 999999 !important;
+}
+
+/* Mobile Optimierung (Smartphones) */
+@media (max-width: 768px) {
+    #web3-player-dock {
+        position: fixed !important;
+        bottom: 10px !important;
+        
+        /* Exakte Zentrierung auf dem Screen */
+        left: 50% !important;
+        right: auto !important;
+        transform: translateX(-50%) !important;
+        
+        /* Reaktive Breite */
+        width: 94% !important;
+        max-width: 420px !important;
+        
+        /* Reset alter Abstände */
+        margin: 0 !important;
+        padding: 10px 12px !important;
+        box-sizing: border-box !important;
+        
+        /* Optischer Cyberpunk-Glow & Abrundung */
+        border-radius: 8px;
+        box-shadow: 0 0 25px rgba(0, 240, 255, 0.3);
+    }
+
+    /* Inneres Flex-Layout für Mobilgeräte schlank machen */
+    #web3-player-dock .player-container {
+        display: flex !important;
+        flex-direction: column !important; /* Stapelt Track-Info & Controls sauber untereinander */
+        gap: 8px !important;
+        width: 100% !important;
+    }
+
+    /* Track Info Anordnung */
+    #web3-player-dock .player-track-info {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    /* Cover-Größe mobil anpassen */
+    #web3-player-dock .player-mini-cover {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    /* Titelgröße anpassen */
+    #web3-player-dock #player-current-title {
+        font-size: 0.75rem !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important; /* Verhindert Umbrüche */
+        max-width: 200px !important;
+    }
+
+    /* Progress-Bar voll ausnutzen */
+    #web3-player-dock .player-progress-wrapper {
+        width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    #web3-player-dock .progress-bar-bg {
+        flex-grow: 1 !important;
+    }
+
+    /* Equalizer mobil ausblenden oder verkleinern, falls Platz fehlt */
+    #web3-player-dock .equalizer-bar {
+        display: none !important; /* Spart Platz auf kleinen Displays */
+    }
+}
+/* ==========================================
+   VIDEO CARDS & SERVICES MOBILE OPTIMIZATION
+   ========================================== */
+
+@media (max-width: 768px) {
+    /* 1. Grid-Anpassung für die Video Cards */
+    #medias .concert-grid {
+        grid-template-columns: 1fr !important; /* Exakt 1 Spalte mobil */
+        gap: 15px !important;
+        padding: 0 !important;
+    }
+
+    /* 2. Video Card Container mobil bündig machen */
+    #medias .video-card {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        padding: 8px !important;
+    }
+
+    /* 3. Titel in den Video Cards anpassen */
+    #medias .video-card h4 {
+        font-size: 0.85rem !important;
+        letter-spacing: 1px !important;
+        word-break: break-word !important; /* Verhindert das Sprengen des Rahmens */
+        margin-bottom: 8px !important;
+    }
+
+    /* 4. Concert Vault Grid (Mini-Cuts) */
+    #gaiaConcertGrid {
+        grid-template-columns: repeat(2, 1fr) !important; /* Besser 2 Spalten mobil statt gequetscht */
+        gap: 8px !important;
+    }
+
+    /* 5. Services-Bereich: Offset-Klasse mobil aufheben */
+    #medias .services-move-down {
+        margin-top: 0 !important; /* Entfernt den störenden Desktop-Versatz */
+    }
+
+    /* 6. Bild-Assets & Karten-Abstände im Services-Grid */
+    #medias .services-hover {
+        margin-bottom: 25px !important;
+    }
+
+    #medias .services-asset {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 4px;
+    }
+}
+/* ==========================================
+   WAVE SECTION MAIN TITLE OVERRIDE
+   ========================================== */
+
+#wave .section-title {
+    font-family: monospace !important;
+    font-size: 2.8rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 4px !important;
+    text-transform: uppercase !important;
+    
+    /* Neon-Grün Cyberpunk Glow */
+    color: #78fc83 !important;
+    text-shadow: 0 0 15px rgba(120, 252, 131, 0.6),
+                 0 0 30px rgba(120, 252, 131, 0.2) !important;
+    
+    margin-bottom: 10px !important;
+}
+
+/* Mobile Optimierung für den Haupttitel */
+@media (max-width: 768px) {
+    #wave .section-title {
+        font-size: 1.8rem !important;
+        letter-spacing: 2px !important;
+    }
+}
+/* ==========================================================================
+   ISOLIERTER ONAIR-STYLE: WAVE-SECTION
+   ========================================================================== */
+
+/* 1. Sektions-Hintergrund auf tiefes Schwarz setzen */
+.onair-wave-section,
+#wave {
+    background: #000000 !important;
+    background-color: #000000 !important;
+}
+
+/* 2. Haupt-Titel "WAVE" stylen (Groß, weiß, mit blauem Unterstrich wie bei SHOW & ARCHIVE) */
+.onair-wave-section .section-title,
+#wave .section-title {
+    font-size: 64px !important;
+    color: #ffffff !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: normal !important;
+    text-shadow: none !important; /* Entfernt den Neongrünen Glow, um 1:1 wie SHOW/ARCHIVE auszusehen */
+}
+
+.onair-wave-section .section-title:after,
+#wave .section-title:after {
+    background-color: #04c4f9 !important; /* Dein ONAIR-Blau */
+}
+
+/* 3. Subtitle-Bereich (Texte unter der Hauptüberschrift) */
+.onair-wave-section .section-all-subtitle,
+#wave .section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+}
+
+.onair-wave-section .section-all-subtitle-first,
+#wave .section-all-subtitle-first {
+    color: #ffffff !important; /* Strahlendes Weiß für den ersten Satz */
+}
+
+/* 4. Links innerhalb der Beschreibungen */
+.onair-wave-section .section-links,
+#wave .section-links {
+    color: #04c4f9 !important;
+}
+
+.onair-wave-section .section-links:hover,
+#wave .section-links:hover {
+    color: #ffffff !important;
+}
+
+/* 5. Mobile Optimierung für den ONAIR-Titel */
+@media (max-width: 768px) {
+    .onair-wave-section .section-title,
+    #wave .section-title {
+        font-size: 38px !important;
+    }
+}
+/* ==========================================
+   GLOBAL ONAIR SECTION TITLE & SUBTITLE STYLE
+   ========================================== */
+
+/* 1. Globaler Haupt-Titel (ARCHIVE, WAVE, SHOW, MEDIAS etc.) */
+.section-title {
+    font-family: 'Montserrat', 'Syne', sans-serif !important; /* Zwingt die Theme-Hauptschriftart */
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    color: #ffffff !important;
+    letter-spacing: -1px !important; /* Sorgt für den kompakten, wuchtigen ONAIR-Look */
+    line-height: 1 !important;
+    margin-bottom: 25px !important;
+    position: relative !important;
+}
+
+/* 2. Der ONAIR-blaue Unterstrich unter jedem Haupt-Titel */
+.section-title::after {
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 4px !important;
+    background-color: #04c4f9 !important; /* Dein ONAIR-Blau */
+    margin-top: 15px !important;
+    border-radius: 2px !important;
+}
+
+/* 3. Subtitle-Sätze unter den Haupt-Titeln */
+.section-all-subtitle {
+    color: #888888 !important;
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.section-all-subtitle-first {
+    color: #ffffff !important; /* Strahlendes Weiß für die erste Zeile */
+    font-weight: 700 !important;
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE OVERRIDE
+   ========================================== */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 38px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .section-title::after {
+        width: 45px !important;
+        height: 3px !important;
+        margin-top: 10px !important;
+    }
+
+    .section-all-subtitle {
+        font-size: 15px !important;
+    }
+}
+/* ==========================================
+   MOBILE RESPONSIVE & CONTAINMENT FIX (WAVE & CHAT)
+   ========================================== */
+
+/* 1. Globaler Text-Umbruch & Containment für den Webchat */
+.webchat-block,
+#gaiaChatHistory,
+.webchat-block * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+}
+
+/* Chat-Verlauf Fenster mobil absichern */
+#gaiaChatHistory {
+    width: 100% !important;
+    overflow-x: hidden !important; /* Kein seitliches Scrollen der Seite */
+    overflow-y: auto !important;   /* Vertikales Scrollen im Chat erlauben */
+}
+
+/* Chat-Bubbles / Nachrichten mobil anpassen */
+#gaiaChatHistory div {
+    max-width: 100% !important;
+}
+
+/* Formular-Grid & Input-Felder mobil strikt einspaltig */
+@media (max-width: 768px) {
+    /* 2. Titel & Subtitle mobil anpassen */
+    .section-title {
+        font-size: 36px !important;
+        letter-spacing: -1px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .section-title::after {
+        width: 40px !important;
+        height: 3px !important;
+        margin-top: 8px !important;
+    }
+
+    .section-all-subtitle {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* 3. Webchat & FAQ Container Padding mobil reduzieren */
+    .webchat-block,
+    .knowledge-block {
+        padding: 18px 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    #gaiaChatHistory {
+        height: 350px !important; /* Etwas kompakter auf Handys */
+        padding: 12px !important;
+    }
+
+    #chatPlaceholder {
+        margin-top: 130px !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Inputs & Formular */
+    .gaia-input,
+    #gaiaName,
+    #gaiaEmail,
+    #gaiaMessage {
+        width: 100% !important;
+        font-size: 14px !important;
+        padding: 12px !important;
+    }
+
+    /* Button & Upload-Zeile */
+    .gaia-submit-btn,
+    button[type="submit"] {
+        padding: 14px !important;
+        font-size: 0.85rem !important;
+    }
+}
+/* ==========================================
+   WAVE TITLE FIX (NUR OPTIK, KEIN LAYOUT-BREAK)
+   ========================================== */
+
+/* 1. Haupttitel Weiß machen & grünen Glow killen */
+#wave .section-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    margin-bottom: 25px !important;
+}
+
+/* 2. Den blauen ONAIR-Unterstrich erzwingen */
+#wave .section-title::after {
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 4px !important;
+    background-color: #04c4f9 !important;
+    margin-top: 15px !important;
+}
+
+/* 3. Mobile Skalierung für den Titel */
+@media (max-width: 768px) {
+    #wave .section-title {
+        font-size: 36px !important;
+    }
+}
+/* ==========================================
+   WAVE TITLE FIX (DESKTOP & MOBILE ENFORCED)
+   ========================================== */
+
+/* 1. Desktop & Algemein */
+#wave .section-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    margin-bottom: 25px !important;
+}
+
+#wave .section-title::after {
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 4px !important;
+    background-color: #04c4f9 !important;
+    margin-top: 15px !important;
+}
+
+/* 2. Explizit für Mobile (Smartphones / Tablets) */
+@media (max-width: 768px) {
+    #wave .section-title {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 36px !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        text-shadow: none !important;
+        margin-bottom: 15px !important;
+    }
+
+    #wave .section-title::after {
+        content: '' !important;
+        display: block !important;
+        width: 40px !important;
+        height: 3px !important;
+        background-color: #04c4f9 !important;
+        margin-top: 10px !important;
+    }
+}
+/* ==========================================
+   GAIA CUSTOM WAVE TITLE (ISOLATED CLASS)
+   ========================================== */
+
+/* Desktop & Basis-Style */
+.gaia-wave-title {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    text-shadow: none !important;
+    margin-bottom: 25px !important;
+}
+
+.gaia-wave-title::after {
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 4px !important;
+    background-color: #04c4f9 !important;
+    margin-top: 15px !important;
+}
+
+/* Mobile-Override (Smartphones & Tablets) */
+@media (max-width: 768px) {
+    .gaia-wave-title {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 36px !important;
+        font-weight: 800 !important;
+        color: #ffffff !important;
+        text-shadow: none !important;
+        margin-bottom: 15px !important;
+    }
+
+    .gaia-wave-title::after {
+        content: '' !important;
+        display: block !important;
+        width: 40px !important;
+        height: 3px !important;
+        background-color: #04c4f9 !important;
+        margin-top: 10px !important;
+    }
+}
+.legendary-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.legendary-gallery figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
